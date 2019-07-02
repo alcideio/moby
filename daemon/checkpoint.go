@@ -7,8 +7,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/docker/docker/api"
-	"github.com/docker/docker/api/types"
+	"github.com/alcideio/moby/api"
+	"github.com/alcideio/moby/api/types"
 )
 
 var (

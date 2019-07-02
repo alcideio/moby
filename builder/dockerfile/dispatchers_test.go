@@ -6,11 +6,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/strslice"
-	"github.com/docker/docker/builder"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/api/types/strslice"
+	"github.com/alcideio/moby/builder"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 	"github.com/docker/go-connections/nat"
 )
 

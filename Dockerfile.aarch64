@@ -6,7 +6,7 @@
 # docker build -t docker -f Dockerfile.aarch64 .
 #
 # # Mount your source in an interactive container for quick testing:
-# docker run -v `pwd`:/go/src/github.com/docker/docker --privileged -i -t docker bash
+# docker run -v `pwd`:/go/src/github.com/alcideio/moby --privileged -i -t docker bash
 #
 # # Run the test suite:
 # docker run --privileged docker hack/make.sh test-unit test-integration-cli test-docker-py
@@ -146,7 +146,7 @@ ENV DOCKER_PY_COMMIT 4a08d04aef0595322e1b5ac7c52f28a931da85a5
 # Before running the integration tests conftest.py is
 # loaded which results in loads auth.py that
 # imports the docker-pycreds module.
-RUN git clone https://github.com/docker/docker-py.git /docker-py \
+RUN git clone https://github.com/alcideio/moby-py.git /docker-py \
 	&& cd /docker-py \
 	&& git checkout -q $DOCKER_PY_COMMIT \
 	&& pip install wheel \
@@ -170,7 +170,7 @@ RUN groupadd -r docker
 RUN useradd --create-home --gid docker unprivilegeduser
 
 VOLUME /var/lib/docker
-WORKDIR /go/src/github.com/docker/docker
+WORKDIR /go/src/github.com/alcideio/moby
 ENV DOCKER_BUILDTAGS apparmor pkcs11 seccomp selinux
 
 # Let us use a .bashrc file
@@ -180,7 +180,7 @@ RUN ln -sfv $PWD/.bashrc ~/.bashrc
 RUN ln -sv $PWD/contrib/completion/bash/docker /etc/bash_completion.d/docker
 
 # Get useful and necessary Hub images so we can "docker load" locally instead of pulling
-COPY contrib/download-frozen-image-v2.sh /go/src/github.com/docker/docker/contrib/
+COPY contrib/download-frozen-image-v2.sh /go/src/github.com/alcideio/moby/contrib/
 RUN ./contrib/download-frozen-image-v2.sh /docker-frozen-images \
 	aarch64/buildpack-deps:jessie@sha256:6aa1d6910791b7ac78265fd0798e5abd6cb3f27ae992f6f960f6c303ec9535f2 \
 	aarch64/busybox:latest@sha256:b23a6a37cf269dff6e46d2473b6e227afa42b037e6d23435f1d2bc40fc8c2828 \
@@ -198,4 +198,4 @@ RUN /tmp/install-binaries.sh tomlv vndr runc containerd tini proxy
 ENTRYPOINT ["hack/dind"]
 
 # Upload docker source
-COPY . /go/src/github.com/docker/docker
+COPY . /go/src/github.com/alcideio/moby

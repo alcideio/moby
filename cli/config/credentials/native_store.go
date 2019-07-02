@@ -1,10 +1,10 @@
 package credentials
 
 import (
-	"github.com/docker/docker-credential-helpers/client"
-	"github.com/docker/docker-credential-helpers/credentials"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/cli/config/configfile"
+	"github.com/alcideio/moby-credential-helpers/client"
+	"github.com/alcideio/moby-credential-helpers/credentials"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/cli/config/configfile"
 )
 
 const (

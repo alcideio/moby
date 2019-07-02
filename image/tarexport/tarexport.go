@@ -2,9 +2,9 @@ package tarexport
 
 import (
 	"github.com/docker/distribution"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/layer"
-	refstore "github.com/docker/docker/reference"
+	"github.com/alcideio/moby/image"
+	"github.com/alcideio/moby/layer"
+	refstore "github.com/alcideio/moby/reference"
 )
 
 const (

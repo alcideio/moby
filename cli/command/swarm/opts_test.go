@@ -3,7 +3,7 @@ package swarm
 import (
 	"testing"
 
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestNodeAddrOptionSetHostAndPort(t *testing.T) {

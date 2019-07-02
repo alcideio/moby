@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/cli/command"
-	"github.com/docker/docker/cli/command/inspect"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/swarm"
+	"github.com/alcideio/moby/cli/command"
+	"github.com/alcideio/moby/cli/command/inspect"
 	units "github.com/docker/go-units"
 )
 

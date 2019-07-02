@@ -6,8 +6,8 @@ import (
 	"os"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/dockerversion"
-	"github.com/docker/docker/pkg/homedir"
+	"github.com/alcideio/moby/dockerversion"
+	"github.com/alcideio/moby/pkg/homedir"
 )
 
 // ensureHomeIfIAmStatic ensure $HOME to be set if dockerversion.IAmStatic is "true".

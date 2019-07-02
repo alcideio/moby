@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api"
-	"github.com/docker/docker/api/server/httputils"
-	"github.com/docker/docker/api/server/middleware"
+	"github.com/alcideio/moby/api"
+	"github.com/alcideio/moby/api/server/httputils"
+	"github.com/alcideio/moby/api/server/middleware"
 
 	"golang.org/x/net/context"
 )

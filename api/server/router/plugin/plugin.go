@@ -1,6 +1,6 @@
 package plugin
 
-import "github.com/docker/docker/api/server/router"
+import "github.com/alcideio/moby/api/server/router"
 
 // pluginRouter is a router to talk with the plugin controller
 type pluginRouter struct {

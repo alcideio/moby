@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/docker/docker/integration-cli/checker"
+	"github.com/alcideio/moby/integration-cli/checker"
 	"github.com/go-check/check"
 )
 

@@ -4,7 +4,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/integration-cli/checker"
+	"github.com/alcideio/moby/integration-cli/checker"
 	"github.com/go-check/check"
 )
 
@@ -90,7 +90,7 @@ func (s *DockerSuite) TestDiffEnsureDefaultDevs(c *check.C) {
 	}
 }
 
-// https://github.com/docker/docker/pull/14381#discussion_r33859347
+// https://github.com/alcideio/moby/pull/14381#discussion_r33859347
 func (s *DockerSuite) TestDiffEmptyArgClientError(c *check.C) {
 	out, _, err := dockerCmdWithError("diff", "")
 	c.Assert(err, checker.NotNil)

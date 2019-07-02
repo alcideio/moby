@@ -4,9 +4,9 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	cliconfig "github.com/docker/docker/cli/config"
-	"github.com/docker/docker/cli/config/configfile"
+	"github.com/alcideio/moby/api/types"
+	cliconfig "github.com/alcideio/moby/cli/config"
+	"github.com/alcideio/moby/cli/config/configfile"
 )
 
 func newConfigFile(auths map[string]types.AuthConfig) *configfile.ConfigFile {

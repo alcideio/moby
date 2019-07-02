@@ -8,13 +8,13 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/pkg/progress"
-	"github.com/docker/docker/pkg/streamformatter"
-	"github.com/docker/docker/pkg/stringid"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/filters"
+	"github.com/alcideio/moby/api/types/swarm"
+	"github.com/alcideio/moby/client"
+	"github.com/alcideio/moby/pkg/progress"
+	"github.com/alcideio/moby/pkg/streamformatter"
+	"github.com/alcideio/moby/pkg/stringid"
 	"golang.org/x/net/context"
 )
 

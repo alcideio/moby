@@ -11,7 +11,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/docker/docker/builder/dockerfile/command"
+	"github.com/alcideio/moby/builder/dockerfile/command"
 )
 
 // Node is a structure used to represent a parse tree.

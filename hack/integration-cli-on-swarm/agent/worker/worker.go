@@ -8,7 +8,7 @@ import (
 
 	"github.com/bfirsh/funker-go"
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/hack/integration-cli-on-swarm/agent/types"
+	"github.com/alcideio/moby/hack/integration-cli-on-swarm/agent/types"
 )
 
 func main() {

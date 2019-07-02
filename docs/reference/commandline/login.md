@@ -5,7 +5,7 @@ keywords: "registry, login, image"
 ---
 
 <!-- This file is maintained within the docker/docker Github
-     repository at https://github.com/docker/docker/. Make all
+     repository at https://github.com/alcideio/moby/. Make all
      pull requests against that repo. If you see this file in
      another repository, consider it read-only there, as it will
      periodically be overwritten by the definitive file. Pull
@@ -64,9 +64,9 @@ program to be in the client's host `$PATH`.
 This is the list of currently available credentials helpers and where
 you can download them from:
 
-- D-Bus Secret Service: https://github.com/docker/docker-credential-helpers/releases
-- Apple macOS keychain: https://github.com/docker/docker-credential-helpers/releases
-- Microsoft Windows Credential Manager: https://github.com/docker/docker-credential-helpers/releases
+- D-Bus Secret Service: https://github.com/alcideio/moby-credential-helpers/releases
+- Apple macOS keychain: https://github.com/alcideio/moby-credential-helpers/releases
+- Microsoft Windows Credential Manager: https://github.com/alcideio/moby-credential-helpers/releases
 
 You need to specify the credentials store in `$HOME/.docker/config.json`
 to tell the docker engine to use it. The value of the config property should be

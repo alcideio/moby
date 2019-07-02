@@ -3,11 +3,11 @@ package image
 import (
 	"io"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/backend"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/api/types/image"
-	"github.com/docker/docker/api/types/registry"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/backend"
+	"github.com/alcideio/moby/api/types/filters"
+	"github.com/alcideio/moby/api/types/image"
+	"github.com/alcideio/moby/api/types/registry"
 	"golang.org/x/net/context"
 )
 

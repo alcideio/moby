@@ -28,25 +28,25 @@ bundle_test_unit() {
 
 	if [ "$(go env GOHOSTOS)" = 'solaris' ]; then
 		pkg_list=$(go list -e \
-			-f '{{if ne .Name "github.com/docker/docker"}}
+			-f '{{if ne .Name "github.com/alcideio/moby"}}
 				{{.ImportPath}}
 			    {{end}}' \
 			"${BUILDFLAGS[@]}" $TEST_PATH \
-			| grep github.com/docker/docker \
-			| grep -v github.com/docker/docker/vendor \
-			| grep -v github.com/docker/docker/daemon/graphdriver \
-			| grep -v github.com/docker/docker/man \
-			| grep -v github.com/docker/docker/integration-cli)
+			| grep github.com/alcideio/moby \
+			| grep -v github.com/alcideio/moby/vendor \
+			| grep -v github.com/alcideio/moby/daemon/graphdriver \
+			| grep -v github.com/alcideio/moby/man \
+			| grep -v github.com/alcideio/moby/integration-cli)
 	else
 		pkg_list=$(go list -e \
-			-f '{{if ne .Name "github.com/docker/docker"}}
+			-f '{{if ne .Name "github.com/alcideio/moby"}}
 				{{.ImportPath}}
 			    {{end}}' \
 			"${BUILDFLAGS[@]}" $TEST_PATH \
-			| grep github.com/docker/docker \
-			| grep -v github.com/docker/docker/vendor \
-			| grep -v github.com/docker/docker/man \
-			| grep -v github.com/docker/docker/integration-cli)
+			| grep github.com/alcideio/moby \
+			| grep -v github.com/alcideio/moby/vendor \
+			| grep -v github.com/alcideio/moby/man \
+			| grep -v github.com/alcideio/moby/integration-cli)
 	fi
 
 	go test -cover -ldflags "$LDFLAGS" "${BUILDFLAGS[@]}" $TESTFLAGS $pkg_list

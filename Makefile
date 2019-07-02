@@ -48,12 +48,12 @@ DOCKER_ENVS := \
 # (default to no bind mount if DOCKER_HOST is set)
 # note: BINDDIR is supported for backwards-compatibility here
 BIND_DIR := $(if $(BINDDIR),$(BINDDIR),$(if $(DOCKER_HOST),,bundles))
-DOCKER_MOUNT := $(if $(BIND_DIR),-v "$(CURDIR)/$(BIND_DIR):/go/src/github.com/docker/docker/$(BIND_DIR)")
+DOCKER_MOUNT := $(if $(BIND_DIR),-v "$(CURDIR)/$(BIND_DIR):/go/src/github.com/alcideio/moby/$(BIND_DIR)")
 
 # This allows the test suite to be able to run without worrying about the underlying fs used by the container running the daemon (e.g. aufs-on-aufs), so long as the host running the container is running a supported fs.
 # The volume will be cleaned up when the container is removed due to `--rm`.
 # Note that `BIND_DIR` will already be set to `bundles` if `DOCKER_HOST` is not set (see above BIND_DIR line), in such case this will do nothing since `DOCKER_MOUNT` will already be set.
-DOCKER_MOUNT := $(if $(DOCKER_MOUNT),$(DOCKER_MOUNT),-v /go/src/github.com/docker/docker/bundles) -v $(CURDIR)/.git:/go/src/github.com/docker/docker/.git
+DOCKER_MOUNT := $(if $(DOCKER_MOUNT),$(DOCKER_MOUNT),-v /go/src/github.com/alcideio/moby/bundles) -v $(CURDIR)/.git:/go/src/github.com/alcideio/moby/.git
 
 # This allows to set the docker-dev container name
 DOCKER_CONTAINER_NAME := $(if $(CONTAINER_NAME),--name $(CONTAINER_NAME),)
@@ -129,7 +129,7 @@ install: ## install the linux binaries
 manpages: ## Generate man pages from go source and markdown
 	docker build ${DOCKER_BUILD_ARGS} -t docker-manpage-dev -f "man/$(DOCKERFILE)" ./man
 	docker run --rm \
-		-v $(PWD):/go/src/github.com/docker/docker/ \
+		-v $(PWD):/go/src/github.com/alcideio/moby/ \
 		docker-manpage-dev
 
 rpm: build ## build the rpm packages
@@ -167,8 +167,8 @@ win: build ## cross build the binary for windows
 
 .PHONY: swagger-gen
 swagger-gen:
-	docker run --rm -v $(PWD):/go/src/github.com/docker/docker \
-		-w /go/src/github.com/docker/docker \
+	docker run --rm -v $(PWD):/go/src/github.com/alcideio/moby \
+		-w /go/src/github.com/alcideio/moby \
 		--entrypoint hack/generate-swagger-api.sh \
 		-e GOPATH=/go \
 		quay.io/goswagger/swagger:0.7.4
@@ -193,6 +193,6 @@ build-integration-cli-on-swarm: build ## build images and binary for running int
 # For avoiding bakings DOCKER_GRAPHDRIVER and so on to image, we cannot use $(DOCKER_ENVS) here
 	docker run -t -d --name $(tmp) -e DOCKER_GITCOMMIT -e BUILDFLAGS -e DOCKER_INCREMENTAL_BINARY --privileged $(DOCKER_MOUNT_PKGCACHE) $(DOCKER_IMAGE) top
 	docker exec $(tmp) hack/make.sh build-integration-test-binary dynbinary
-	docker exec $(tmp) go build -o /worker github.com/docker/docker/hack/integration-cli-on-swarm/agent/worker
+	docker exec $(tmp) go build -o /worker github.com/alcideio/moby/hack/integration-cli-on-swarm/agent/worker
 	docker commit -c 'ENTRYPOINT ["/worker"]' $(tmp) $(INTEGRATION_CLI_WORKER_IMAGE)
 	docker rm -f $(tmp)

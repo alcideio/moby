@@ -2,8 +2,8 @@ package daemon
 
 import (
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/builder"
-	"github.com/docker/docker/image/cache"
+	"github.com/alcideio/moby/builder"
+	"github.com/alcideio/moby/image/cache"
 )
 
 // MakeImageCache creates a stateful image cache.

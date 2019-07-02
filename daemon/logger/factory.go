@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sync"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/pkg/plugingetter"
+	containertypes "github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/pkg/plugingetter"
 	units "github.com/docker/go-units"
 	"github.com/pkg/errors"
 )

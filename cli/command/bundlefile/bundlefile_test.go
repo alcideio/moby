@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestLoadFileV01Success(t *testing.T) {

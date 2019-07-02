@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/pkg/archive"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestDiffContextFormatWrite(t *testing.T) {

@@ -22,10 +22,10 @@ import (
 	"net/http/httputil"
 	"net/url"
 
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/daemon"
-	"github.com/docker/docker/pkg/authorization"
-	"github.com/docker/docker/pkg/plugins"
+	"github.com/alcideio/moby/integration-cli/checker"
+	"github.com/alcideio/moby/integration-cli/daemon"
+	"github.com/alcideio/moby/pkg/authorization"
+	"github.com/alcideio/moby/pkg/plugins"
 	"github.com/go-check/check"
 )
 

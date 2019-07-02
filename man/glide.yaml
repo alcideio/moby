@@ -1,4 +1,4 @@
-package: github.com/docker/docker/man
+package: github.com/alcideio/moby/man
 import:
 - package: github.com/cpuguy83/go-md2man
   subpackages:

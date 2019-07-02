@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"syscall"
 
-	"github.com/docker/docker/pkg/reexec"
+	"github.com/alcideio/moby/pkg/reexec"
 )
 
 func init() {

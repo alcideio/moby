@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/pkg/stringid"
+	"github.com/alcideio/moby/integration-cli/checker"
+	"github.com/alcideio/moby/pkg/stringid"
 	"github.com/go-check/check"
 	"github.com/kr/pty"
 )

@@ -8,9 +8,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/request"
-	"github.com/docker/docker/pkg/testutil"
+	"github.com/alcideio/moby/integration-cli/checker"
+	"github.com/alcideio/moby/integration-cli/request"
+	"github.com/alcideio/moby/pkg/testutil"
 	"github.com/go-check/check"
 )
 

@@ -3,8 +3,8 @@ package main
 import (
 	"strings"
 
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/cli"
+	"github.com/alcideio/moby/integration-cli/checker"
+	"github.com/alcideio/moby/integration-cli/cli"
 	"github.com/go-check/check"
 )
 

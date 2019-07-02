@@ -5,12 +5,12 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/cli/internal/test"
+	"github.com/alcideio/moby/api/types/swarm"
+	"github.com/alcideio/moby/cli/internal/test"
 	"github.com/pkg/errors"
 	// Import builders to get the builder function as package function
-	. "github.com/docker/docker/cli/internal/test/builders"
-	"github.com/docker/docker/pkg/testutil/assert"
+	. "github.com/alcideio/moby/cli/internal/test/builders"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestNodeUpdateErrors(t *testing.T) {

@@ -10,8 +10,8 @@ import (
 
 	"github.com/Nvveen/Gotty"
 
-	"github.com/docker/docker/pkg/jsonlog"
-	"github.com/docker/docker/pkg/term"
+	"github.com/alcideio/moby/pkg/jsonlog"
+	"github.com/alcideio/moby/pkg/term"
 	"github.com/docker/go-units"
 )
 

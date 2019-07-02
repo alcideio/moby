@@ -4,7 +4,7 @@ The Docker toolset to pack, ship, store, and deliver content.
 
 This repository's main product is the Docker Registry 2.0 implementation
 for storing and distributing Docker images. It supersedes the
-[docker/docker-registry](https://github.com/docker/docker-registry)
+[docker/docker-registry](https://github.com/alcideio/moby-registry)
 project with a new API design, focused around security and performance.
 
 <img src="https://www.docker.com/sites/default/files/oyster-registry-3.png" width=200px/>
@@ -24,7 +24,7 @@ This repository contains the following components:
 ### How does this integrate with Docker engine?
 
 This project should provide an implementation to a V2 API for use in the [Docker
-core project](https://github.com/docker/docker). The API should be embeddable
+core project](https://github.com/alcideio/moby). The API should be embeddable
 and simplify the process of securely pulling and pushing content from `docker`
 daemons.
 
@@ -68,7 +68,7 @@ others, it is not.
 For example, users with their own software products may want to maintain a
 registry for private, company images. Also, you may wish to deploy your own
 image repository for images used to test or in continuous integration. For these
-use cases and others, [deploying your own registry instance](https://github.com/docker/docker.github.io/blob/master/registry/deploying.md)
+use cases and others, [deploying your own registry instance](https://github.com/alcideio/moby.github.io/blob/master/registry/deploying.md)
 may be the better choice.
 
 ### Migration to Registry 2.0

@@ -11,11 +11,11 @@ import (
 
 	"github.com/docker/distribution"
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/image/v1"
-	"github.com/docker/docker/layer"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/system"
+	"github.com/alcideio/moby/image"
+	"github.com/alcideio/moby/image/v1"
+	"github.com/alcideio/moby/layer"
+	"github.com/alcideio/moby/pkg/archive"
+	"github.com/alcideio/moby/pkg/system"
 	"github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 )

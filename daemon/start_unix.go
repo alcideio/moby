@@ -5,8 +5,8 @@ package daemon
 import (
 	"fmt"
 
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/libcontainerd"
+	"github.com/alcideio/moby/container"
+	"github.com/alcideio/moby/libcontainerd"
 )
 
 func (daemon *Daemon) getLibcontainerdCreateOptions(container *container.Container) ([]libcontainerd.CreateOption, error) {

@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/opts"
+	"github.com/alcideio/moby/api/types/swarm"
+	"github.com/alcideio/moby/opts"
 	"github.com/pkg/errors"
 	"github.com/spf13/pflag"
 )

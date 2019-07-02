@@ -5,7 +5,7 @@ A collection of `go-check` Checkers to ease the use of it.
 
 ## Building and testing it
 
-You need either [docker](https://github.com/docker/docker), or `go`
+You need either [docker](https://github.com/alcideio/moby), or `go`
 and `glide` in order to build and test shakers.
 
 ### Using Docker and Makefile

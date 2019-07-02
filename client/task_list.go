@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"net/url"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/api/types/swarm"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/filters"
+	"github.com/alcideio/moby/api/types/swarm"
 	"golang.org/x/net/context"
 )
 

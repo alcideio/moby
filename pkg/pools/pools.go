@@ -14,7 +14,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/docker/docker/pkg/ioutils"
+	"github.com/alcideio/moby/pkg/ioutils"
 )
 
 var (

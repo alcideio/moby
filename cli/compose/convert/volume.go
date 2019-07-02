@@ -1,8 +1,8 @@
 package convert
 
 import (
-	"github.com/docker/docker/api/types/mount"
-	composetypes "github.com/docker/docker/cli/compose/types"
+	"github.com/alcideio/moby/api/types/mount"
+	composetypes "github.com/alcideio/moby/cli/compose/types"
 	"github.com/pkg/errors"
 )
 

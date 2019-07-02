@@ -5,7 +5,7 @@ keywords: "Examples, Usage, volume, docker, data, volumes, plugin, api"
 ---
 
 <!-- This file is maintained within the docker/docker Github
-     repository at https://github.com/docker/docker/. Make all
+     repository at https://github.com/alcideio/moby/. Make all
      pull requests against that repo. If you see this file in
      another repository, consider it read-only there, as it will
      periodically be overwritten by the definitive file. Pull
@@ -27,26 +27,26 @@ beyond the lifetime of a single Docker host. See the
 - If used as part of the v2 plugin architecture, mountpoints that are part of
   paths returned by the plugin must be mounted under the directory specified by
   `PropagatedMount` in the plugin configuration
-  ([#26398](https://github.com/docker/docker/pull/26398))
+  ([#26398](https://github.com/alcideio/moby/pull/26398))
 
 ### 1.12.0
 
 - Add `Status` field to `VolumeDriver.Get` response
-  ([#21006](https://github.com/docker/docker/pull/21006#))
+  ([#21006](https://github.com/alcideio/moby/pull/21006#))
 - Add `VolumeDriver.Capabilities` to get capabilities of the volume driver
-  ([#22077](https://github.com/docker/docker/pull/22077))
+  ([#22077](https://github.com/alcideio/moby/pull/22077))
 
 ### 1.10.0
 
 - Add `VolumeDriver.Get` which gets the details about the volume
-  ([#16534](https://github.com/docker/docker/pull/16534))
+  ([#16534](https://github.com/alcideio/moby/pull/16534))
 - Add `VolumeDriver.List` which lists all volumes owned by the driver
-  ([#16534](https://github.com/docker/docker/pull/16534))
+  ([#16534](https://github.com/alcideio/moby/pull/16534))
 
 ### 1.8.0
 
 - Initial support for volume driver plugins
-  ([#14659](https://github.com/docker/docker/pull/14659))
+  ([#14659](https://github.com/alcideio/moby/pull/14659))
 
 ## Command-line changes
 

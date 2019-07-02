@@ -15,9 +15,9 @@ import (
 	syslog "github.com/RackSec/srslog"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/daemon/logger"
-	"github.com/docker/docker/daemon/logger/loggerutils"
-	"github.com/docker/docker/pkg/urlutil"
+	"github.com/alcideio/moby/daemon/logger"
+	"github.com/alcideio/moby/daemon/logger/loggerutils"
+	"github.com/alcideio/moby/pkg/urlutil"
 	"github.com/docker/go-connections/tlsconfig"
 )
 

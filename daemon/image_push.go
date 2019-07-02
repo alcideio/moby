@@ -5,10 +5,10 @@ import (
 
 	"github.com/docker/distribution/manifest/schema2"
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/distribution"
-	progressutils "github.com/docker/docker/distribution/utils"
-	"github.com/docker/docker/pkg/progress"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/distribution"
+	progressutils "github.com/alcideio/moby/distribution/utils"
+	"github.com/alcideio/moby/pkg/progress"
 	"golang.org/x/net/context"
 )
 

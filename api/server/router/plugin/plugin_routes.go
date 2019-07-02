@@ -8,11 +8,11 @@ import (
 	"strings"
 
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/api/server/httputils"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/streamformatter"
+	"github.com/alcideio/moby/api/server/httputils"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/filters"
+	"github.com/alcideio/moby/pkg/ioutils"
+	"github.com/alcideio/moby/pkg/streamformatter"
 	"github.com/pkg/errors"
 	"golang.org/x/net/context"
 )

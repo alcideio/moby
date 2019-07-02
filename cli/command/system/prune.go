@@ -3,10 +3,10 @@ package system
 import (
 	"fmt"
 
-	"github.com/docker/docker/cli"
-	"github.com/docker/docker/cli/command"
-	"github.com/docker/docker/cli/command/prune"
-	"github.com/docker/docker/opts"
+	"github.com/alcideio/moby/cli"
+	"github.com/alcideio/moby/cli/command"
+	"github.com/alcideio/moby/cli/command/prune"
+	"github.com/alcideio/moby/opts"
 	units "github.com/docker/go-units"
 	"github.com/spf13/cobra"
 )

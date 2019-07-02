@@ -7,7 +7,7 @@ import (
 	"path"
 	"text/template"
 
-	"github.com/docker/docker/pkg/aaparser"
+	"github.com/alcideio/moby/pkg/aaparser"
 )
 
 type profileData struct {

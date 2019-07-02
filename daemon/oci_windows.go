@@ -3,10 +3,10 @@ package daemon
 import (
 	"syscall"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/oci"
-	"github.com/docker/docker/pkg/sysinfo"
+	containertypes "github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/container"
+	"github.com/alcideio/moby/oci"
+	"github.com/alcideio/moby/pkg/sysinfo"
 	"github.com/opencontainers/runtime-spec/specs-go"
 )
 

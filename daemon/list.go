@@ -8,12 +8,12 @@ import (
 	"strings"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	networktypes "github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/volume"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/filters"
+	networktypes "github.com/alcideio/moby/api/types/network"
+	"github.com/alcideio/moby/container"
+	"github.com/alcideio/moby/image"
+	"github.com/alcideio/moby/volume"
 	"github.com/docker/go-connections/nat"
 )
 

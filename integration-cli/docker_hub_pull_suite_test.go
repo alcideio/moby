@@ -5,8 +5,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/daemon"
+	"github.com/alcideio/moby/integration-cli/checker"
+	"github.com/alcideio/moby/integration-cli/daemon"
 	"github.com/go-check/check"
 )
 

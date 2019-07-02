@@ -9,10 +9,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/opts"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/client"
+	"github.com/alcideio/moby/opts"
 	"golang.org/x/net/context"
 )
 

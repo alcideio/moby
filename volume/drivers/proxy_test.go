@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/pkg/plugins"
+	"github.com/alcideio/moby/pkg/plugins"
 	"github.com/docker/go-connections/tlsconfig"
 )
 

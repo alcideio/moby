@@ -4,10 +4,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api/types/events"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/container"
-	daemonevents "github.com/docker/docker/daemon/events"
+	"github.com/alcideio/moby/api/types/events"
+	"github.com/alcideio/moby/api/types/filters"
+	"github.com/alcideio/moby/container"
+	daemonevents "github.com/alcideio/moby/daemon/events"
 	"github.com/docker/libnetwork"
 )
 

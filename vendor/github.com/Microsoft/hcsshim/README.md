@@ -1,7 +1,7 @@
 # hcsshim
 
 This package supports launching Windows Server containers from Go. It is
-primarily used in the [Docker Engine](https://github.com/docker/docker) project,
+primarily used in the [Docker Engine](https://github.com/alcideio/moby) project,
 but it can be freely used by other projects as well.
 
 This project has adopted the [Microsoft Open Source Code of

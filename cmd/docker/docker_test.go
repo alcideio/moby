@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/cli/command"
-	"github.com/docker/docker/cli/debug"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/cli/command"
+	"github.com/alcideio/moby/cli/debug"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestClientDebugEnabled(t *testing.T) {

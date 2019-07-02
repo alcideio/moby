@@ -12,9 +12,9 @@ import (
 	"github.com/docker/distribution/registry/client"
 	"github.com/docker/distribution/registry/client/auth"
 	"github.com/docker/distribution/registry/client/transport"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/dockerversion"
-	"github.com/docker/docker/registry"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/dockerversion"
+	"github.com/alcideio/moby/registry"
 	"github.com/docker/go-connections/sockets"
 	"golang.org/x/net/context"
 )
@@ -23,8 +23,8 @@ import (
 var ImageTypes = []string{
 	schema2.MediaTypeImageConfig,
 	// Handle unexpected values from https://github.com/docker/distribution/issues/1621
-	// (see also https://github.com/docker/docker/issues/22378,
-	// https://github.com/docker/docker/issues/30083)
+	// (see also https://github.com/alcideio/moby/issues/22378,
+	// https://github.com/alcideio/moby/issues/30083)
 	"application/octet-stream",
 	"application/json",
 	"text/html",

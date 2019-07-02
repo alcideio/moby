@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	icmd "github.com/docker/docker/pkg/testutil/cmd"
+	icmd "github.com/alcideio/moby/pkg/testutil/cmd"
 	"github.com/go-check/check"
 )
 

@@ -21,13 +21,13 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/docker/docker/daemon/graphdriver"
-	"github.com/docker/docker/dockerversion"
-	"github.com/docker/docker/pkg/devicemapper"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/loopback"
-	"github.com/docker/docker/pkg/mount"
-	"github.com/docker/docker/pkg/parsers"
+	"github.com/alcideio/moby/daemon/graphdriver"
+	"github.com/alcideio/moby/dockerversion"
+	"github.com/alcideio/moby/pkg/devicemapper"
+	"github.com/alcideio/moby/pkg/idtools"
+	"github.com/alcideio/moby/pkg/loopback"
+	"github.com/alcideio/moby/pkg/mount"
+	"github.com/alcideio/moby/pkg/parsers"
 	units "github.com/docker/go-units"
 
 	"github.com/opencontainers/runc/libcontainer/label"
@@ -1704,7 +1704,7 @@ func (devices *DeviceSet) initDevmapper(doInit bool) error {
 		return err
 	}
 
-	// https://github.com/docker/docker/issues/4036
+	// https://github.com/alcideio/moby/issues/4036
 	if supported := devicemapper.UdevSetSyncSupport(true); !supported {
 		if dockerversion.IAmStatic == "true" {
 			logrus.Error("devmapper: Udev sync is not supported. This will lead to data loss and unexpected behavior. Install a dynamic binary to use devicemapper or select a different storage driver. For more information, see https://docs.docker.com/engine/reference/commandline/dockerd/#storage-driver-options")

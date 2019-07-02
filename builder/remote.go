@@ -8,9 +8,9 @@ import (
 	"io/ioutil"
 	"regexp"
 
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/httputils"
-	"github.com/docker/docker/pkg/urlutil"
+	"github.com/alcideio/moby/pkg/archive"
+	"github.com/alcideio/moby/pkg/httputils"
+	"github.com/alcideio/moby/pkg/urlutil"
 )
 
 // When downloading remote contexts, limit the amount (in bytes)

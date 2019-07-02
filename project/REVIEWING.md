@@ -130,7 +130,7 @@ understand.
 
 The docker/docker repository only contains _reference documentation_, all
 "narrative" documentation is kept in a [unified documentation
-repository](https://github.com/docker/docker.github.io). Reviewers must
+repository](https://github.com/alcideio/moby.github.io). Reviewers must
 therefore verify which parts of the documentation need to be updated. Any
 contribution that may require changing the narrative should get the
 `impact/documentation` label: this is the signal for documentation maintainers
@@ -227,7 +227,7 @@ review session. The goal of that session is to agree on one of the following out
 
 Typically, every merged pull request get shipped naturally with the next release cut from the
 `master` branch (either the next minor or major version, as indicated by the
-[`VERSION`](https://github.com/docker/docker/blob/master/VERSION) file at the root of the
+[`VERSION`](https://github.com/alcideio/moby/blob/master/VERSION) file at the root of the
 repository). However, the time-based nature of the release process provides no guarantee that a
 given pull request will get merged in time. In other words, all open pull requests are implicitly
 considered part of the next minor or major release milestone, and this won't be materialized on

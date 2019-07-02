@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/daemon"
-	"github.com/docker/docker/pkg/stringid"
+	"github.com/alcideio/moby/daemon"
+	"github.com/alcideio/moby/pkg/stringid"
 	"github.com/docker/swarmkit/api"
 )
 

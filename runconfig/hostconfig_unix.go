@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/pkg/sysinfo"
+	"github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/pkg/sysinfo"
 )
 
 // DefaultDaemonNetworkMode returns the default network stack the daemon should

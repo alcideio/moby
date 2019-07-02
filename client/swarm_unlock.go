@@ -1,7 +1,7 @@
 package client
 
 import (
-	"github.com/docker/docker/api/types/swarm"
+	"github.com/alcideio/moby/api/types/swarm"
 	"golang.org/x/net/context"
 )
 

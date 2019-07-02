@@ -11,8 +11,8 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/network"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/network"
 )
 
 func TestNetworkConnectError(t *testing.T) {

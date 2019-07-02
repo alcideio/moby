@@ -12,8 +12,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/versions"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/versions"
 	"github.com/pkg/errors"
 	"golang.org/x/net/context"
 	"golang.org/x/net/context/ctxhttp"

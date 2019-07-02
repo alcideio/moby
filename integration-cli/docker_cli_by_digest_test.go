@@ -10,10 +10,10 @@ import (
 
 	"github.com/docker/distribution/manifest/schema1"
 	"github.com/docker/distribution/manifest/schema2"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/cli/build"
-	"github.com/docker/docker/pkg/stringutils"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/integration-cli/checker"
+	"github.com/alcideio/moby/integration-cli/cli/build"
+	"github.com/alcideio/moby/pkg/stringutils"
 	"github.com/go-check/check"
 	"github.com/opencontainers/go-digest"
 )

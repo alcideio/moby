@@ -3,8 +3,8 @@ package builder
 import (
 	"os"
 
-	"github.com/docker/docker/builder/dockerignore"
-	"github.com/docker/docker/pkg/fileutils"
+	"github.com/alcideio/moby/builder/dockerignore"
+	"github.com/alcideio/moby/pkg/fileutils"
 )
 
 // DockerIgnoreContext wraps a ModifiableContext to add a method

@@ -1,9 +1,9 @@
 package network
 
 import (
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/api/types/network"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/filters"
+	"github.com/alcideio/moby/api/types/network"
 	"github.com/docker/libnetwork"
 )
 

@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/request"
-	"github.com/docker/docker/pkg/parsers/kernel"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/integration-cli/checker"
+	"github.com/alcideio/moby/integration-cli/request"
+	"github.com/alcideio/moby/pkg/parsers/kernel"
 	"github.com/go-check/check"
 	"github.com/kr/pty"
 )

@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/docker/docker/api/types/backend"
-	"github.com/docker/docker/pkg/jsonlog"
+	"github.com/alcideio/moby/api/types/backend"
+	"github.com/alcideio/moby/pkg/jsonlog"
 )
 
 // ErrReadLogsNotSupported is returned when the logger does not support reading logs.

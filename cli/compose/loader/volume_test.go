@@ -3,8 +3,8 @@ package loader
 import (
 	"testing"
 
-	"github.com/docker/docker/cli/compose/types"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/cli/compose/types"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestParseVolumeAnonymousVolume(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestSecretOptionsSimple(t *testing.T) {

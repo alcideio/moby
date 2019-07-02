@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestRunCommand(t *testing.T) {

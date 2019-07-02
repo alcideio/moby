@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/api"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/pkg/stringutils"
+	"github.com/alcideio/moby/api"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/pkg/stringid"
+	"github.com/alcideio/moby/pkg/stringutils"
 	units "github.com/docker/go-units"
 )
 

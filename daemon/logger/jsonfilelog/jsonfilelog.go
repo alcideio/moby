@@ -11,9 +11,9 @@ import (
 	"sync"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/daemon/logger"
-	"github.com/docker/docker/daemon/logger/loggerutils"
-	"github.com/docker/docker/pkg/jsonlog"
+	"github.com/alcideio/moby/daemon/logger"
+	"github.com/alcideio/moby/daemon/logger/loggerutils"
+	"github.com/alcideio/moby/pkg/jsonlog"
 	"github.com/docker/go-units"
 )
 

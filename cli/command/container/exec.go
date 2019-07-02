@@ -5,12 +5,12 @@ import (
 	"io"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/cli"
-	"github.com/docker/docker/cli/command"
-	apiclient "github.com/docker/docker/client"
-	options "github.com/docker/docker/opts"
-	"github.com/docker/docker/pkg/promise"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/cli"
+	"github.com/alcideio/moby/cli/command"
+	apiclient "github.com/alcideio/moby/client"
+	options "github.com/alcideio/moby/opts"
+	"github.com/alcideio/moby/pkg/promise"
 	"github.com/spf13/cobra"
 	"golang.org/x/net/context"
 )

@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 
 	"github.com/sirupsen/logrus"
-	cliconfig "github.com/docker/docker/cli/config"
-	"github.com/docker/docker/opts"
+	cliconfig "github.com/alcideio/moby/cli/config"
+	"github.com/alcideio/moby/opts"
 	"github.com/docker/go-connections/tlsconfig"
 	"github.com/spf13/pflag"
 )

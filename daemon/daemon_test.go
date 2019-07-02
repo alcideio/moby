@@ -8,20 +8,20 @@ import (
 	"path/filepath"
 	"testing"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/container"
-	_ "github.com/docker/docker/pkg/discovery/memory"
-	"github.com/docker/docker/pkg/registrar"
-	"github.com/docker/docker/pkg/truncindex"
-	"github.com/docker/docker/volume"
-	volumedrivers "github.com/docker/docker/volume/drivers"
-	"github.com/docker/docker/volume/local"
-	"github.com/docker/docker/volume/store"
+	containertypes "github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/container"
+	_ "github.com/alcideio/moby/pkg/discovery/memory"
+	"github.com/alcideio/moby/pkg/registrar"
+	"github.com/alcideio/moby/pkg/truncindex"
+	"github.com/alcideio/moby/volume"
+	volumedrivers "github.com/alcideio/moby/volume/drivers"
+	"github.com/alcideio/moby/volume/local"
+	"github.com/alcideio/moby/volume/store"
 	"github.com/docker/go-connections/nat"
 )
 
 //
-// https://github.com/docker/docker/issues/8069
+// https://github.com/alcideio/moby/issues/8069
 //
 
 func TestGetContainer(t *testing.T) {

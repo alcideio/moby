@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/oci"
-	"github.com/docker/docker/pkg/system"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/oci"
+	"github.com/alcideio/moby/pkg/system"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"
 )

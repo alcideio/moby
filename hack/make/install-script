@@ -23,7 +23,7 @@ set -e
 # -e "GPG_KEYID=deadbeef" \
 # -e "GNUPGHOME=/root/.gnupg" \
 # -v $HOME/.gnupg:/root/.gnupg \
-# -v $(pwd):/go/src/github.com/docker/docker/bundles \
+# -v $(pwd):/go/src/github.com/alcideio/moby/bundles \
 # "$IMAGE_DOCKER" \
 # hack/make.sh install-script
 

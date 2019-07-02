@@ -11,11 +11,11 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/docker/docker/daemon/graphdriver"
-	"github.com/docker/docker/pkg/devicemapper"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/locker"
-	"github.com/docker/docker/pkg/mount"
+	"github.com/alcideio/moby/daemon/graphdriver"
+	"github.com/alcideio/moby/pkg/devicemapper"
+	"github.com/alcideio/moby/pkg/idtools"
+	"github.com/alcideio/moby/pkg/locker"
+	"github.com/alcideio/moby/pkg/mount"
 	units "github.com/docker/go-units"
 )
 

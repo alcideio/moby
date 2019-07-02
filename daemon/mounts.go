@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/docker/docker/container"
-	volumestore "github.com/docker/docker/volume/store"
+	"github.com/alcideio/moby/container"
+	volumestore "github.com/alcideio/moby/volume/store"
 )
 
 func (daemon *Daemon) prepareMountPoints(container *container.Container) error {

@@ -1,6 +1,6 @@
 package formatter
 
-import "github.com/docker/docker/api/types"
+import "github.com/alcideio/moby/api/types"
 
 const (
 	defaultCheckpointFormat = "table {{.Name}}"

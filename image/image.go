@@ -6,7 +6,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/docker/docker/api/types/container"
+	"github.com/alcideio/moby/api/types/container"
 	"github.com/opencontainers/go-digest"
 )
 

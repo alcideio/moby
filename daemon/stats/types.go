@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/pkg/pubsub"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/container"
+	"github.com/alcideio/moby/pkg/pubsub"
 )
 
 type supervisor interface {

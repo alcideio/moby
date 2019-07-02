@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/docker/docker/api/types"
+	"github.com/alcideio/moby/api/types"
 	"github.com/stretchr/testify/assert"
 )
 

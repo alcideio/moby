@@ -7,6 +7,6 @@ set -e
 (
 	source "${MAKEDIR}/.binary-setup"
 	export BINARY_SHORT_NAME="yaml-docs-generator"
-	export GO_PACKAGE='github.com/docker/docker/docs/yaml'
+	export GO_PACKAGE='github.com/alcideio/moby/docs/yaml'
 	source "${MAKEDIR}/.binary"
 )

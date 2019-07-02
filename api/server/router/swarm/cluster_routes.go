@@ -7,12 +7,12 @@ import (
 	"strconv"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/api/errors"
-	"github.com/docker/docker/api/server/httputils"
-	basictypes "github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/backend"
-	"github.com/docker/docker/api/types/filters"
-	types "github.com/docker/docker/api/types/swarm"
+	"github.com/alcideio/moby/api/errors"
+	"github.com/alcideio/moby/api/server/httputils"
+	basictypes "github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/backend"
+	"github.com/alcideio/moby/api/types/filters"
+	types "github.com/alcideio/moby/api/types/swarm"
 	"golang.org/x/net/context"
 )
 

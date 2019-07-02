@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/docker/docker/cli"
-	"github.com/docker/docker/cli/command"
-	"github.com/docker/docker/cli/command/formatter"
+	"github.com/alcideio/moby/cli"
+	"github.com/alcideio/moby/cli/command"
+	"github.com/alcideio/moby/cli/command/formatter"
 	"github.com/spf13/cobra"
 	"golang.org/x/net/context"
 )

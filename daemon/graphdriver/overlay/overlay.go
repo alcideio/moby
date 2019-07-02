@@ -14,13 +14,13 @@ import (
 	"syscall"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/daemon/graphdriver"
-	"github.com/docker/docker/daemon/graphdriver/overlayutils"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/fsutils"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/locker"
-	"github.com/docker/docker/pkg/mount"
+	"github.com/alcideio/moby/daemon/graphdriver"
+	"github.com/alcideio/moby/daemon/graphdriver/overlayutils"
+	"github.com/alcideio/moby/pkg/archive"
+	"github.com/alcideio/moby/pkg/fsutils"
+	"github.com/alcideio/moby/pkg/idtools"
+	"github.com/alcideio/moby/pkg/locker"
+	"github.com/alcideio/moby/pkg/mount"
 	"github.com/opencontainers/runc/libcontainer/label"
 )
 

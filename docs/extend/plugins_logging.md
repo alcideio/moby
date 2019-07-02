@@ -5,7 +5,7 @@ keywords: "Examples, Usage, plugins, docker, documentation, user guide, logging"
 ---
 
 <!-- This file is maintained within the docker/docker Github
-     repository at https://github.com/docker/docker/. Make all
+     repository at https://github.com/alcideio/moby/. Make all
      pull requests against that repo. If you see this file in
      another repository, consider it read-only there, as it will
      periodically be overwritten by the definitive file. Pull
@@ -103,7 +103,7 @@ write to its stdio streams.
 
 Log stream messages are encoded as protocol buffers. The protobuf definitions are
 in the
-[docker repository](https://github.com/docker/docker/blob/master/api/types/plugins/logdriver/entry.proto).
+[docker repository](https://github.com/alcideio/moby/blob/master/api/types/plugins/logdriver/entry.proto).
 
 Since protocol buffers are not self-delimited you must decode them from the stream
 using the following stream format:
@@ -116,7 +116,7 @@ Where `size` is a 4-byte big endian binary encoded uint32. `size` in this case
 defines the size of the next message. `message` is the actual log entry.
 
 A reference golang implementation of a stream encoder/decoder can be found
-[here](https://github.com/docker/docker/blob/master/api/types/plugins/logdriver/io.go)
+[here](https://github.com/alcideio/moby/blob/master/api/types/plugins/logdriver/io.go)
 
 ### `/LogDriver.StopLogging`
 

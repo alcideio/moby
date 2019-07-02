@@ -3,10 +3,10 @@ package idresolver
 import (
 	"testing"
 
-	"github.com/docker/docker/api/types/swarm"
+	"github.com/alcideio/moby/api/types/swarm"
 	// Import builders to get the builder function as package function
-	. "github.com/docker/docker/cli/internal/test/builders"
-	"github.com/docker/docker/pkg/testutil/assert"
+	. "github.com/alcideio/moby/cli/internal/test/builders"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 	"github.com/pkg/errors"
 	"golang.org/x/net/context"
 )

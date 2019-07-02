@@ -1,12 +1,12 @@
 package prune
 
 import (
-	"github.com/docker/docker/cli/command"
-	"github.com/docker/docker/cli/command/container"
-	"github.com/docker/docker/cli/command/image"
-	"github.com/docker/docker/cli/command/network"
-	"github.com/docker/docker/cli/command/volume"
-	"github.com/docker/docker/opts"
+	"github.com/alcideio/moby/cli/command"
+	"github.com/alcideio/moby/cli/command/container"
+	"github.com/alcideio/moby/cli/command/image"
+	"github.com/alcideio/moby/cli/command/network"
+	"github.com/alcideio/moby/cli/command/volume"
+	"github.com/alcideio/moby/opts"
 	"github.com/spf13/cobra"
 )
 

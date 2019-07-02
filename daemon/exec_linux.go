@@ -1,10 +1,10 @@
 package daemon
 
 import (
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/caps"
-	"github.com/docker/docker/daemon/exec"
-	"github.com/docker/docker/libcontainerd"
+	"github.com/alcideio/moby/container"
+	"github.com/alcideio/moby/daemon/caps"
+	"github.com/alcideio/moby/daemon/exec"
+	"github.com/alcideio/moby/libcontainerd"
 	"github.com/opencontainers/runc/libcontainer/apparmor"
 	"github.com/opencontainers/runtime-spec/specs-go"
 )

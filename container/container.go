@@ -16,26 +16,26 @@ import (
 	"golang.org/x/net/context"
 
 	"github.com/sirupsen/logrus"
-	containertypes "github.com/docker/docker/api/types/container"
-	mounttypes "github.com/docker/docker/api/types/mount"
-	networktypes "github.com/docker/docker/api/types/network"
-	swarmtypes "github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/container/stream"
-	"github.com/docker/docker/daemon/exec"
-	"github.com/docker/docker/daemon/logger"
-	"github.com/docker/docker/daemon/logger/jsonfilelog"
-	"github.com/docker/docker/daemon/network"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/layer"
-	"github.com/docker/docker/libcontainerd"
-	"github.com/docker/docker/opts"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/signal"
-	"github.com/docker/docker/pkg/symlink"
-	"github.com/docker/docker/restartmanager"
-	"github.com/docker/docker/runconfig"
-	"github.com/docker/docker/volume"
+	containertypes "github.com/alcideio/moby/api/types/container"
+	mounttypes "github.com/alcideio/moby/api/types/mount"
+	networktypes "github.com/alcideio/moby/api/types/network"
+	swarmtypes "github.com/alcideio/moby/api/types/swarm"
+	"github.com/alcideio/moby/container/stream"
+	"github.com/alcideio/moby/daemon/exec"
+	"github.com/alcideio/moby/daemon/logger"
+	"github.com/alcideio/moby/daemon/logger/jsonfilelog"
+	"github.com/alcideio/moby/daemon/network"
+	"github.com/alcideio/moby/image"
+	"github.com/alcideio/moby/layer"
+	"github.com/alcideio/moby/libcontainerd"
+	"github.com/alcideio/moby/opts"
+	"github.com/alcideio/moby/pkg/idtools"
+	"github.com/alcideio/moby/pkg/ioutils"
+	"github.com/alcideio/moby/pkg/signal"
+	"github.com/alcideio/moby/pkg/symlink"
+	"github.com/alcideio/moby/restartmanager"
+	"github.com/alcideio/moby/runconfig"
+	"github.com/alcideio/moby/volume"
 	"github.com/docker/go-connections/nat"
 	"github.com/docker/go-units"
 	"github.com/docker/libnetwork"
@@ -454,7 +454,7 @@ func (container *Container) StopTimeout() int {
 // The non-recommended host configuration in the start api can
 // make these fields nil again, this corrects that issue until
 // we remove that behavior for good.
-// See https://github.com/docker/docker/pull/17779
+// See https://github.com/alcideio/moby/pull/17779
 // for a more detailed explanation on why we don't want that.
 func (container *Container) InitDNSHostConfig() {
 	container.Lock()

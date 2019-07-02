@@ -3,11 +3,11 @@ package volume
 import (
 	"fmt"
 
-	volumetypes "github.com/docker/docker/api/types/volume"
-	"github.com/docker/docker/cli"
-	"github.com/docker/docker/cli/command"
-	"github.com/docker/docker/opts"
-	runconfigopts "github.com/docker/docker/runconfig/opts"
+	volumetypes "github.com/alcideio/moby/api/types/volume"
+	"github.com/alcideio/moby/cli"
+	"github.com/alcideio/moby/cli/command"
+	"github.com/alcideio/moby/opts"
+	runconfigopts "github.com/alcideio/moby/runconfig/opts"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"golang.org/x/net/context"

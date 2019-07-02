@@ -11,9 +11,9 @@ import (
 
 	"github.com/sirupsen/logrus"
 	"github.com/boltdb/bolt"
-	"github.com/docker/docker/pkg/locker"
-	"github.com/docker/docker/volume"
-	"github.com/docker/docker/volume/drivers"
+	"github.com/alcideio/moby/pkg/locker"
+	"github.com/alcideio/moby/volume"
+	"github.com/alcideio/moby/volume/drivers"
 )
 
 const (

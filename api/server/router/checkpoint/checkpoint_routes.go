@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/docker/docker/api/server/httputils"
-	"github.com/docker/docker/api/types"
+	"github.com/alcideio/moby/api/server/httputils"
+	"github.com/alcideio/moby/api/types"
 	"golang.org/x/net/context"
 )
 

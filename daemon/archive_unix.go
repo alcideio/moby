@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/docker/docker/container"
+	"github.com/alcideio/moby/container"
 )
 
 // checkIfPathIsInAVolume checks if the path is in a volume. If it is, it

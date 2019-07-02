@@ -11,13 +11,13 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/docker/docker/api/types/swarm"
-	cliconfig "github.com/docker/docker/cli/config"
-	"github.com/docker/docker/integration-cli/cli"
-	"github.com/docker/docker/integration-cli/daemon"
-	"github.com/docker/docker/integration-cli/environment"
-	"github.com/docker/docker/integration-cli/registry"
-	"github.com/docker/docker/pkg/reexec"
+	"github.com/alcideio/moby/api/types/swarm"
+	cliconfig "github.com/alcideio/moby/cli/config"
+	"github.com/alcideio/moby/integration-cli/cli"
+	"github.com/alcideio/moby/integration-cli/daemon"
+	"github.com/alcideio/moby/integration-cli/environment"
+	"github.com/alcideio/moby/integration-cli/registry"
+	"github.com/alcideio/moby/pkg/reexec"
 	"github.com/go-check/check"
 )
 

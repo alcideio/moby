@@ -3,11 +3,11 @@ package convert
 import (
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/network"
-	composetypes "github.com/docker/docker/cli/compose/types"
-	"github.com/docker/docker/pkg/testutil/assert"
-	"github.com/docker/docker/pkg/testutil/tempfile"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/network"
+	composetypes "github.com/alcideio/moby/cli/compose/types"
+	"github.com/alcideio/moby/pkg/testutil/assert"
+	"github.com/alcideio/moby/pkg/testutil/tempfile"
 )
 
 func TestNamespaceScope(t *testing.T) {

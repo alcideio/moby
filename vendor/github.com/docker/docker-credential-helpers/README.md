@@ -4,7 +4,7 @@ docker-credential-helpers is a suite of programs to use native stores to keep Do
 
 ## Installation
 
-Go to the [Releases](https://github.com/docker/docker-credential-helpers/releases) page and download the binary that works better for you. Put that binary in your `$PATH`, so Docker can find it.
+Go to the [Releases](https://github.com/alcideio/moby-credential-helpers/releases) page and download the binary that works better for you. Put that binary in your `$PATH`, so Docker can find it.
 
 ### Building from scratch
 
@@ -13,7 +13,7 @@ The programs in this repository are written with the Go programming language. Th
 1 - Download the source and put it in your `$GOPATH` with `go get`.
 
 ```
-$ go get github.com/docker/docker-credential-helpers
+$ go get github.com/alcideio/moby-credential-helpers
 ```
 
 2 - Use `make` to build the program you want. That will leave any executable in the `bin` directory inside the repository.
@@ -39,7 +39,7 @@ Set the `credsStore` option in your `.docker/config.json` file with the suffix o
 
 ### With other command line applications
 
-The sub-package [client](https://godoc.org/github.com/docker/docker-credential-helpers/client) includes
+The sub-package [client](https://godoc.org/github.com/alcideio/moby-credential-helpers/client) includes
 functions to call external programs from your own command line applications.
 
 There are three things you need to know if you need to interact with a helper:
@@ -48,7 +48,7 @@ There are three things you need to know if you need to interact with a helper:
 2. The server address to identify the credentials, for instance `https://example.com`.
 3. The username and secret to store, when you want to store credentials.
 
-You can see examples of each function in the [client](https://godoc.org/github.com/docker/docker-credential-helpers/client) documentation.
+You can see examples of each function in the [client](https://godoc.org/github.com/alcideio/moby-credential-helpers/client) documentation.
 
 ### Available programs
 

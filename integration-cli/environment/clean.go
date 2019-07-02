@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/docker/docker/api/types"
-	volumetypes "github.com/docker/docker/api/types/volume"
-	"github.com/docker/docker/integration-cli/request"
-	icmd "github.com/docker/docker/pkg/testutil/cmd"
+	"github.com/alcideio/moby/api/types"
+	volumetypes "github.com/alcideio/moby/api/types/volume"
+	"github.com/alcideio/moby/integration-cli/request"
+	icmd "github.com/alcideio/moby/pkg/testutil/cmd"
 )
 
 type testingT interface {

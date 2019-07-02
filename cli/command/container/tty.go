@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/cli/command"
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/pkg/signal"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/cli/command"
+	"github.com/alcideio/moby/client"
+	"github.com/alcideio/moby/pkg/signal"
 	"golang.org/x/net/context"
 )
 

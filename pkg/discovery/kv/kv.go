@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/pkg/discovery"
+	"github.com/alcideio/moby/pkg/discovery"
 	"github.com/docker/go-connections/tlsconfig"
 	"github.com/docker/libkv"
 	"github.com/docker/libkv/store"

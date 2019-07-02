@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	cliconfig "github.com/docker/docker/cli/config"
-	"github.com/docker/docker/integration-cli/checker"
-	icmd "github.com/docker/docker/pkg/testutil/cmd"
+	cliconfig "github.com/alcideio/moby/cli/config"
+	"github.com/alcideio/moby/integration-cli/checker"
+	icmd "github.com/alcideio/moby/pkg/testutil/cmd"
 	"github.com/docker/go-connections/tlsconfig"
 	"github.com/go-check/check"
 )

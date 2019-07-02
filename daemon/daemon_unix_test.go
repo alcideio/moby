@@ -8,13 +8,13 @@ import (
 	"path/filepath"
 	"testing"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/volume"
-	"github.com/docker/docker/volume/drivers"
-	"github.com/docker/docker/volume/local"
-	"github.com/docker/docker/volume/store"
+	containertypes "github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/container"
+	"github.com/alcideio/moby/daemon/config"
+	"github.com/alcideio/moby/volume"
+	"github.com/alcideio/moby/volume/drivers"
+	"github.com/alcideio/moby/volume/local"
+	"github.com/alcideio/moby/volume/store"
 )
 
 // Unix test as uses settings which are not available on Windows

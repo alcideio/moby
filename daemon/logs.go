@@ -8,12 +8,12 @@ import (
 	"golang.org/x/net/context"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/backend"
-	containertypes "github.com/docker/docker/api/types/container"
-	timetypes "github.com/docker/docker/api/types/time"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/logger"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/backend"
+	containertypes "github.com/alcideio/moby/api/types/container"
+	timetypes "github.com/alcideio/moby/api/types/time"
+	"github.com/alcideio/moby/container"
+	"github.com/alcideio/moby/daemon/logger"
 )
 
 // ContainerLogs copies the container's log channel to the channel provided in

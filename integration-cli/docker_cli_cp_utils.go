@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/pkg/archive"
+	"github.com/alcideio/moby/integration-cli/checker"
+	"github.com/alcideio/moby/pkg/archive"
 	"github.com/go-check/check"
 )
 

@@ -9,8 +9,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/pkg/system"
+	"github.com/alcideio/moby/api/types/filters"
+	"github.com/alcideio/moby/pkg/system"
 )
 
 // CopyToFile writes the content of the reader to the specified file

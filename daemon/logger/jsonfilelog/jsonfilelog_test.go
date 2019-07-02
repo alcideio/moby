@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/daemon/logger"
-	"github.com/docker/docker/pkg/jsonlog"
+	"github.com/alcideio/moby/daemon/logger"
+	"github.com/alcideio/moby/pkg/jsonlog"
 )
 
 func TestJSONFileLogger(t *testing.T) {

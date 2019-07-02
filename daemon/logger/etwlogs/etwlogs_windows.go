@@ -20,7 +20,7 @@ import (
 	"unsafe"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/daemon/logger"
+	"github.com/alcideio/moby/daemon/logger"
 	"golang.org/x/sys/windows"
 )
 

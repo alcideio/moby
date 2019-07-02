@@ -7,7 +7,7 @@ redirect_from:
 ---
 
 <!-- This file is maintained within the docker/docker Github
-     repository at https://github.com/docker/docker/. Make all
+     repository at https://github.com/alcideio/moby/. Make all
      pull requests against that repo. If you see this file in
      another repository, consider it read-only there, as it will
      periodically be overwritten by the definitive file. Pull
@@ -607,7 +607,7 @@ The cache for `RUN` instructions can be invalidated by `ADD` instructions. See
 
 ### Known issues (RUN)
 
-- [Issue 783](https://github.com/docker/docker/issues/783) is about file
+- [Issue 783](https://github.com/alcideio/moby/issues/783) is about file
   permissions problems that can occur when using the AUFS file system. You
   might notice it during an attempt to `rm` a file, for example.
 

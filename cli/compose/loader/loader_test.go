@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/cli/compose/types"
+	"github.com/alcideio/moby/cli/compose/types"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -7,8 +7,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/longpath"
+	"github.com/alcideio/moby/pkg/archive"
+	"github.com/alcideio/moby/pkg/longpath"
 )
 
 // applyLayerHandler parses a diff in the standard layer format from `layer`, and

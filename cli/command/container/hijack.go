@@ -6,9 +6,9 @@ import (
 	"sync"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/cli/command"
-	"github.com/docker/docker/pkg/stdcopy"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/cli/command"
+	"github.com/alcideio/moby/pkg/stdcopy"
 	"golang.org/x/net/context"
 )
 
@@ -111,7 +111,7 @@ func restoreTerminal(streams command.Streams, in io.Closer) error {
 	// until we find a better solution.
 	//
 	// This can also cause the client on Windows to get stuck in Win32 CloseHandle()
-	// in some cases. See https://github.com/docker/docker/issues/28267#issuecomment-288237442
+	// in some cases. See https://github.com/alcideio/moby/issues/28267#issuecomment-288237442
 	// Tracked internally at Microsoft by VSO #11352156. In the
 	// Windows case, you hit this if you are using the native/v2 console,
 	// not the "legacy" console, and you start the client in a new window. eg

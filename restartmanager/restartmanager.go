@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/docker/docker/api/types/container"
+	"github.com/alcideio/moby/api/types/container"
 )
 
 const (

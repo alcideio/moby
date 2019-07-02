@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/api/errors"
-	"github.com/docker/docker/container"
+	"github.com/alcideio/moby/api/errors"
+	"github.com/alcideio/moby/container"
 )
 
 // ContainerStop looks for the given container and terminates it,

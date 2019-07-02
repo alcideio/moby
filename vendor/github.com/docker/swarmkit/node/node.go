@@ -15,7 +15,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 	"github.com/boltdb/bolt"
-	"github.com/docker/docker/pkg/plugingetter"
+	"github.com/alcideio/moby/pkg/plugingetter"
 	"github.com/docker/swarmkit/agent"
 	"github.com/docker/swarmkit/agent/exec"
 	"github.com/docker/swarmkit/api"

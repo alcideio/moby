@@ -6,13 +6,13 @@ import (
 	"time"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/api/errors"
-	"github.com/docker/docker/api/types/backend"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/container/stream"
-	"github.com/docker/docker/daemon/logger"
-	"github.com/docker/docker/pkg/stdcopy"
-	"github.com/docker/docker/pkg/term"
+	"github.com/alcideio/moby/api/errors"
+	"github.com/alcideio/moby/api/types/backend"
+	"github.com/alcideio/moby/container"
+	"github.com/alcideio/moby/container/stream"
+	"github.com/alcideio/moby/daemon/logger"
+	"github.com/alcideio/moby/pkg/stdcopy"
+	"github.com/alcideio/moby/pkg/term"
 )
 
 // ContainerAttach attaches to logs according to the config passed in. See ContainerAttachConfig.

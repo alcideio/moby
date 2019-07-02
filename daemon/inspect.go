@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/backend"
-	networktypes "github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/api/types/versions/v1p20"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/daemon/network"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/backend"
+	networktypes "github.com/alcideio/moby/api/types/network"
+	"github.com/alcideio/moby/api/types/versions"
+	"github.com/alcideio/moby/api/types/versions/v1p20"
+	"github.com/alcideio/moby/container"
+	"github.com/alcideio/moby/daemon/network"
 	"github.com/docker/go-connections/nat"
 )
 

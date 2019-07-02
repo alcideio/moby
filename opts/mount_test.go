@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	mounttypes "github.com/docker/docker/api/types/mount"
-	"github.com/docker/docker/pkg/testutil/assert"
+	mounttypes "github.com/alcideio/moby/api/types/mount"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestMountOptString(t *testing.T) {

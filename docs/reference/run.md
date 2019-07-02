@@ -5,7 +5,7 @@ keywords: "docker, run, configure, runtime"
 ---
 
 <!-- This file is maintained within the docker/docker Github
-     repository at https://github.com/docker/docker/. Make all
+     repository at https://github.com/alcideio/moby/. Make all
      pull requests against that repo. If you see this file in
      another repository, consider it read-only there, as it will
      periodically be overwritten by the definitive file. Pull
@@ -124,7 +124,7 @@ and pass along signals. All of that is configurable:
     -i              : Keep STDIN open even if not attached
 
 If you do not specify `-a` then Docker will [attach to both stdout and stderr
-]( https://github.com/docker/docker/blob/4118e0c9eebda2412a09ae66e90c34b85fae3275/runconfig/opts/parse.go#L267).
+]( https://github.com/alcideio/moby/blob/4118e0c9eebda2412a09ae66e90c34b85fae3275/runconfig/opts/parse.go#L267).
 You can specify to which of the three standard streams (`STDIN`, `STDOUT`,
 `STDERR`) you'd like to connect instead, as in:
 

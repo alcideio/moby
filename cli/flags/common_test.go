@@ -4,8 +4,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	cliconfig "github.com/docker/docker/cli/config"
-	"github.com/docker/docker/pkg/testutil/assert"
+	cliconfig "github.com/alcideio/moby/cli/config"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 	"github.com/spf13/pflag"
 )
 

@@ -15,12 +15,12 @@ import (
 
 	"github.com/sirupsen/logrus"
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/distribution/metadata"
-	"github.com/docker/docker/image"
-	imagev1 "github.com/docker/docker/image/v1"
-	"github.com/docker/docker/layer"
-	"github.com/docker/docker/pkg/ioutils"
-	refstore "github.com/docker/docker/reference"
+	"github.com/alcideio/moby/distribution/metadata"
+	"github.com/alcideio/moby/image"
+	imagev1 "github.com/alcideio/moby/image/v1"
+	"github.com/alcideio/moby/layer"
+	"github.com/alcideio/moby/pkg/ioutils"
+	refstore "github.com/alcideio/moby/reference"
 	"github.com/opencontainers/go-digest"
 )
 

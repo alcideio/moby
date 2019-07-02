@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/container"
-	mounttypes "github.com/docker/docker/api/types/mount"
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/container"
+	mounttypes "github.com/alcideio/moby/api/types/mount"
+	"github.com/alcideio/moby/api/types/swarm"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 	"golang.org/x/net/context"
 )
 

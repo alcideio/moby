@@ -3,9 +3,9 @@ package swarm
 import (
 	"fmt"
 
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/cli"
-	"github.com/docker/docker/cli/command"
+	"github.com/alcideio/moby/api/types/swarm"
+	"github.com/alcideio/moby/cli"
+	"github.com/alcideio/moby/cli/command"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"golang.org/x/net/context"

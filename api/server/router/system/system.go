@@ -1,8 +1,8 @@
 package system
 
 import (
-	"github.com/docker/docker/api/server/router"
-	"github.com/docker/docker/daemon/cluster"
+	"github.com/alcideio/moby/api/server/router"
+	"github.com/alcideio/moby/daemon/cluster"
 )
 
 // systemRouter provides information about the Docker system overall.

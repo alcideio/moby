@@ -6,7 +6,7 @@
 # docker build -t docker .
 #
 # # Mount your source in an interactive container for quick testing:
-# docker run -v `pwd`:/go/src/github.com/docker/docker --privileged -i -t docker bash
+# docker run -v `pwd`:/go/src/github.com/alcideio/moby --privileged -i -t docker bash
 #
 # # Run the test suite:
 # docker run --privileged docker hack/make.sh test-unit test-integration-cli test-docker-py
@@ -30,8 +30,8 @@ ARG APT_MIRROR=deb.debian.org
 RUN sed -ri "s/(httpredir|deb).debian.org/$APT_MIRROR/g" /etc/apt/sources.list
 
 # Add zfs ppa
-COPY keys/launchpad-ppa-zfs.asc /go/src/github.com/docker/docker/keys/
-RUN apt-key add /go/src/github.com/docker/docker/keys/launchpad-ppa-zfs.asc
+COPY keys/launchpad-ppa-zfs.asc /go/src/github.com/alcideio/moby/keys/
+RUN apt-key add /go/src/github.com/alcideio/moby/keys/launchpad-ppa-zfs.asc
 RUN echo deb http://ppa.launchpad.net/zfs-native/stable/ubuntu trusty main > /etc/apt/sources.list.d/zfs.list
 
 # Packaged dependencies
@@ -198,7 +198,7 @@ ENV DOCKER_PY_COMMIT 4a08d04aef0595322e1b5ac7c52f28a931da85a5
 # Before running the integration tests conftest.py is
 # loaded which results in loads auth.py that
 # imports the docker-pycreds module.
-RUN git clone https://github.com/docker/docker-py.git /docker-py \
+RUN git clone https://github.com/alcideio/moby-py.git /docker-py \
 	&& cd /docker-py \
 	&& git checkout -q $DOCKER_PY_COMMIT \
 	&& pip install docker-pycreds==0.2.1 \
@@ -221,7 +221,7 @@ RUN groupadd -r docker
 RUN useradd --create-home --gid docker unprivilegeduser
 
 VOLUME /var/lib/docker
-WORKDIR /go/src/github.com/docker/docker
+WORKDIR /go/src/github.com/alcideio/moby
 ENV DOCKER_BUILDTAGS apparmor pkcs11 seccomp selinux
 
 # Let us use a .bashrc file
@@ -233,7 +233,7 @@ RUN echo "source $PWD/hack/make/.integration-test-helpers" >> /etc/bash.bashrc
 RUN ln -sv $PWD/contrib/completion/bash/docker /etc/bash_completion.d/docker
 
 # Get useful and necessary Hub images so we can "docker load" locally instead of pulling
-COPY contrib/download-frozen-image-v2.sh /go/src/github.com/docker/docker/contrib/
+COPY contrib/download-frozen-image-v2.sh /go/src/github.com/alcideio/moby/contrib/
 RUN ./contrib/download-frozen-image-v2.sh /docker-frozen-images \
 	buildpack-deps:jessie@sha256:25785f89240fbcdd8a74bdaf30dd5599a9523882c6dfc567f2e9ef7cf6f79db6 \
 	busybox:latest@sha256:e4f93f6ed15a0cdd342f5aae387886fba0ab98af0a102da6276eaf24d6e6ade0 \
@@ -251,4 +251,4 @@ RUN /tmp/install-binaries.sh tomlv vndr runc containerd tini proxy bindata
 ENTRYPOINT ["hack/dind"]
 
 # Upload docker source
-COPY . /go/src/github.com/docker/docker
+COPY . /go/src/github.com/alcideio/moby

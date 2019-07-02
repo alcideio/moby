@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/docker/docker/layer"
+	"github.com/alcideio/moby/layer"
 )
 
 func TestV1IDService(t *testing.T) {

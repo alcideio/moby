@@ -9,8 +9,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/request"
+	"github.com/alcideio/moby/integration-cli/checker"
+	"github.com/alcideio/moby/integration-cli/request"
 	"github.com/go-check/check"
 )
 

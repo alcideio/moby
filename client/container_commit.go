@@ -6,7 +6,7 @@ import (
 	"net/url"
 
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/api/types"
+	"github.com/alcideio/moby/api/types"
 	"golang.org/x/net/context"
 )
 

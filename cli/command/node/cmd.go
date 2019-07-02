@@ -3,10 +3,10 @@ package node
 import (
 	"errors"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/cli"
-	"github.com/docker/docker/cli/command"
-	apiclient "github.com/docker/docker/client"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/cli"
+	"github.com/alcideio/moby/cli/command"
+	apiclient "github.com/alcideio/moby/client"
 	"github.com/spf13/cobra"
 	"golang.org/x/net/context"
 )

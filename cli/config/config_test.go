@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/cli/config/configfile"
-	"github.com/docker/docker/pkg/homedir"
+	"github.com/alcideio/moby/cli/config/configfile"
+	"github.com/alcideio/moby/pkg/homedir"
 )
 
 func TestEmptyConfigDir(t *testing.T) {

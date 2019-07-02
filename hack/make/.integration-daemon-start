@@ -11,7 +11,7 @@ if ! command -v docker &> /dev/null; then
 fi
 
 # This is a temporary hack for split-binary mode. It can be removed once
-# https://github.com/docker/docker/pull/22134 is merged into docker master
+# https://github.com/alcideio/moby/pull/22134 is merged into docker master
 if [ "$(go env GOOS)" = 'windows' ]; then
        return
 fi

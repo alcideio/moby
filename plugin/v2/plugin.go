@@ -5,9 +5,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/pkg/plugingetter"
-	"github.com/docker/docker/pkg/plugins"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/pkg/plugingetter"
+	"github.com/alcideio/moby/pkg/plugins"
 	"github.com/opencontainers/go-digest"
 )
 

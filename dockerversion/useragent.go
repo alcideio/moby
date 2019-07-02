@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/docker/docker/pkg/parsers/kernel"
-	"github.com/docker/docker/pkg/useragent"
+	"github.com/alcideio/moby/pkg/parsers/kernel"
+	"github.com/alcideio/moby/pkg/useragent"
 	"golang.org/x/net/context"
 )
 

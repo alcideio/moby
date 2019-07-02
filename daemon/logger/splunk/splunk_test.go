@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/daemon/logger"
+	"github.com/alcideio/moby/daemon/logger"
 )
 
 // Validate options

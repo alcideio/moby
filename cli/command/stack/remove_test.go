@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/cli/internal/test"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/cli/internal/test"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestRemoveStack(t *testing.T) {

@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/builder/dockerfile/parser"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/builder/dockerfile/parser"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestAddNodesForLabelOption(t *testing.T) {

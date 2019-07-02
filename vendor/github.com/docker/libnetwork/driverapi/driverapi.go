@@ -3,7 +3,7 @@ package driverapi
 import (
 	"net"
 
-	"github.com/docker/docker/pkg/plugingetter"
+	"github.com/alcideio/moby/pkg/plugingetter"
 	"github.com/docker/libnetwork/discoverapi"
 )
 

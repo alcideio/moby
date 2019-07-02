@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/layer"
-	"github.com/docker/docker/libcontainerd"
-	"github.com/docker/docker/pkg/system"
+	"github.com/alcideio/moby/container"
+	"github.com/alcideio/moby/layer"
+	"github.com/alcideio/moby/libcontainerd"
+	"github.com/alcideio/moby/pkg/system"
 	"golang.org/x/sys/windows/registry"
 )
 

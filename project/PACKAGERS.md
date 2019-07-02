@@ -47,7 +47,7 @@ To build Docker, you will need the following:
 * Go version 1.6 or later
 * A clean checkout of the source added to a valid [Go
   workspace](https://golang.org/doc/code.html#Workspaces) under the path
-  *src/github.com/docker/docker* (unless you plan to use `AUTO_GOPATH`,
+  *src/github.com/alcideio/moby* (unless you plan to use `AUTO_GOPATH`,
   explained in more detail below)
 
 To build the Docker daemon, you will additionally need:
@@ -248,9 +248,9 @@ installed and available at runtime:
 * a [properly
   mounted](https://github.com/tianon/cgroupfs-mount/blob/master/cgroupfs-mount)
   cgroupfs hierarchy (having a single, all-encompassing "cgroup" mount point
-  [is](https://github.com/docker/docker/issues/2683)
-  [not](https://github.com/docker/docker/issues/3485)
-  [sufficient](https://github.com/docker/docker/issues/4568))
+  [is](https://github.com/alcideio/moby/issues/2683)
+  [not](https://github.com/alcideio/moby/issues/3485)
+  [sufficient](https://github.com/alcideio/moby/issues/4568))
 
 Additionally, the Docker client needs the following software to be installed and
 available at runtime:

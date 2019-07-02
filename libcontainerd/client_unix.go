@@ -12,7 +12,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 	containerd "github.com/docker/containerd/api/grpc/types"
-	"github.com/docker/docker/pkg/idtools"
+	"github.com/alcideio/moby/pkg/idtools"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"golang.org/x/net/context"
 )

@@ -5,7 +5,7 @@ import (
 	"net"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/pkg/plugins"
+	"github.com/alcideio/moby/pkg/plugins"
 	"github.com/docker/libnetwork/discoverapi"
 	"github.com/docker/libnetwork/ipamapi"
 	"github.com/docker/libnetwork/ipams/remote/api"

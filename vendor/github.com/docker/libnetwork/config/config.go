@@ -5,8 +5,8 @@ import (
 
 	"github.com/BurntSushi/toml"
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/pkg/discovery"
-	"github.com/docker/docker/pkg/plugingetter"
+	"github.com/alcideio/moby/pkg/discovery"
+	"github.com/alcideio/moby/pkg/plugingetter"
 	"github.com/docker/go-connections/tlsconfig"
 	"github.com/docker/libkv/store"
 	"github.com/docker/libnetwork/cluster"

@@ -17,12 +17,12 @@ import (
 	"time"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/api"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/strslice"
-	"github.com/docker/docker/builder"
-	"github.com/docker/docker/pkg/signal"
+	"github.com/alcideio/moby/api"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/api/types/strslice"
+	"github.com/alcideio/moby/builder"
+	"github.com/alcideio/moby/pkg/signal"
 	"github.com/docker/go-connections/nat"
 	"github.com/pkg/errors"
 )

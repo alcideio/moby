@@ -10,8 +10,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/docker/docker/pkg/aaparser"
-	"github.com/docker/docker/pkg/templates"
+	"github.com/alcideio/moby/pkg/aaparser"
+	"github.com/alcideio/moby/pkg/templates"
 )
 
 var (

@@ -3,8 +3,8 @@ package plugin
 import (
 	"sync"
 
-	"github.com/docker/docker/pkg/plugins"
-	"github.com/docker/docker/plugin/v2"
+	"github.com/alcideio/moby/pkg/plugins"
+	"github.com/alcideio/moby/plugin/v2"
 )
 
 // Store manages the plugin inventory in memory and on-disk

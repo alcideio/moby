@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/pkg/mount"
+	"github.com/alcideio/moby/pkg/mount"
 )
 
 // On Linux, plugins use a static path for storing execution state,

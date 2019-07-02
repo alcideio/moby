@@ -8,11 +8,11 @@ import (
 
 	"github.com/sirupsen/logrus"
 	"github.com/docker/distribution"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/layer"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/progress"
+	"github.com/alcideio/moby/image"
+	"github.com/alcideio/moby/layer"
+	"github.com/alcideio/moby/pkg/archive"
+	"github.com/alcideio/moby/pkg/ioutils"
+	"github.com/alcideio/moby/pkg/progress"
 	"golang.org/x/net/context"
 )
 

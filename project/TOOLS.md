@@ -60,4 +60,4 @@ jobs.
 One of the things queued from the Hooks are the building of the Master
 Binaries. This happens on every push to the master branch of Docker. The
 repository for this is maintained at
-[github.com/docker/docker-bb](https://github.com/docker/docker-bb).
+[github.com/alcideio/moby-bb](https://github.com/alcideio/moby-bb).

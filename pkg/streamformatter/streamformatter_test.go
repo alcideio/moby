@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/pkg/jsonmessage"
+	"github.com/alcideio/moby/pkg/jsonmessage"
 )
 
 func TestFormatStream(t *testing.T) {

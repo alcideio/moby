@@ -3,7 +3,7 @@ package namesgenerator
 import (
 	"fmt"
 
-	"github.com/docker/docker/pkg/random"
+	"github.com/alcideio/moby/pkg/random"
 )
 
 var (

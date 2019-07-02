@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/builder"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/builder"
+	"github.com/alcideio/moby/pkg/archive"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestEmptyDockerfile(t *testing.T) {

@@ -2,7 +2,7 @@ package daemon
 
 import (
 	"github.com/sirupsen/logrus"
-	swarmtypes "github.com/docker/docker/api/types/swarm"
+	swarmtypes "github.com/alcideio/moby/api/types/swarm"
 	"github.com/docker/swarmkit/agent/exec"
 )
 

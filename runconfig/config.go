@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/docker/docker/api/types/container"
-	networktypes "github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/pkg/sysinfo"
-	"github.com/docker/docker/volume"
+	"github.com/alcideio/moby/api/types/container"
+	networktypes "github.com/alcideio/moby/api/types/network"
+	"github.com/alcideio/moby/pkg/sysinfo"
+	"github.com/alcideio/moby/volume"
 )
 
 // ContainerDecoder implements httputils.ContainerDecoder

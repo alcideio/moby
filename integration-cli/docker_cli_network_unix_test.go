@@ -15,13 +15,13 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/versions/v1p20"
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/daemon"
-	"github.com/docker/docker/pkg/stringid"
-	icmd "github.com/docker/docker/pkg/testutil/cmd"
-	"github.com/docker/docker/runconfig"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/versions/v1p20"
+	"github.com/alcideio/moby/integration-cli/checker"
+	"github.com/alcideio/moby/integration-cli/daemon"
+	"github.com/alcideio/moby/pkg/stringid"
+	icmd "github.com/alcideio/moby/pkg/testutil/cmd"
+	"github.com/alcideio/moby/runconfig"
 	"github.com/docker/libnetwork/driverapi"
 	remoteapi "github.com/docker/libnetwork/drivers/remote/api"
 	"github.com/docker/libnetwork/ipamapi"
@@ -1791,7 +1791,7 @@ func (s *DockerNetworkSuite) TestDockerNetworkDisconnectFromBridge(c *check.C) {
 	c.Assert(err, check.IsNil)
 }
 
-// TestConntrackFlowsLeak covers the failure scenario of ticket: https://github.com/docker/docker/issues/8795
+// TestConntrackFlowsLeak covers the failure scenario of ticket: https://github.com/alcideio/moby/issues/8795
 // Validates that conntrack is correctly cleaned once a container is destroyed
 func (s *DockerNetworkSuite) TestConntrackFlowsLeak(c *check.C) {
 	testRequires(c, IsAmd64, DaemonIsLinux, Network)

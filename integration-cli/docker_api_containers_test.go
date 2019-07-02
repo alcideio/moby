@@ -16,18 +16,18 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	containertypes "github.com/docker/docker/api/types/container"
-	mounttypes "github.com/docker/docker/api/types/mount"
-	networktypes "github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/cli/build"
-	"github.com/docker/docker/integration-cli/request"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/mount"
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/pkg/testutil"
-	"github.com/docker/docker/volume"
+	"github.com/alcideio/moby/api/types"
+	containertypes "github.com/alcideio/moby/api/types/container"
+	mounttypes "github.com/alcideio/moby/api/types/mount"
+	networktypes "github.com/alcideio/moby/api/types/network"
+	"github.com/alcideio/moby/integration-cli/checker"
+	"github.com/alcideio/moby/integration-cli/cli/build"
+	"github.com/alcideio/moby/integration-cli/request"
+	"github.com/alcideio/moby/pkg/ioutils"
+	"github.com/alcideio/moby/pkg/mount"
+	"github.com/alcideio/moby/pkg/stringid"
+	"github.com/alcideio/moby/pkg/testutil"
+	"github.com/alcideio/moby/volume"
 	"github.com/go-check/check"
 )
 
@@ -1131,7 +1131,7 @@ func (s *DockerSuite) TestContainerAPIDeleteRemoveVolume(c *check.C) {
 	c.Assert(os.IsNotExist(err), checker.True, check.Commentf("expected to get ErrNotExist error, got %v", err))
 }
 
-// Regression test for https://github.com/docker/docker/issues/6231
+// Regression test for https://github.com/alcideio/moby/issues/6231
 func (s *DockerSuite) TestContainerAPIChunkedEncoding(c *check.C) {
 
 	config := map[string]interface{}{

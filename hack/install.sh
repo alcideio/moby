@@ -266,7 +266,7 @@ do_install() {
 			to v1.10+.
 
 			You can find instructions for this here:
-			https://github.com/docker/docker/wiki/Engine-v1.10.0-content-addressability-migration
+			https://github.com/alcideio/moby/wiki/Engine-v1.10.0-content-addressability-migration
 			EOF
 		else
 			cat >&2 <<-'EOF'

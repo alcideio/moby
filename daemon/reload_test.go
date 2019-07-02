@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/pkg/discovery"
-	_ "github.com/docker/docker/pkg/discovery/memory"
-	"github.com/docker/docker/registry"
+	"github.com/alcideio/moby/daemon/config"
+	"github.com/alcideio/moby/pkg/discovery"
+	_ "github.com/alcideio/moby/pkg/discovery/memory"
+	"github.com/alcideio/moby/registry"
 )
 
 func TestDaemonReloadLabels(t *testing.T) {

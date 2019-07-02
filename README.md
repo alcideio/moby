@@ -1,4 +1,4 @@
-Docker: the container engine [![Release](https://img.shields.io/github/release/docker/docker.svg)](https://github.com/docker/docker/releases/latest)
+Docker: the container engine [![Release](https://img.shields.io/github/release/docker/docker.svg)](https://github.com/alcideio/moby/releases/latest)
 ============================
 
 Docker is an open source project to pack, ship and run any application
@@ -169,10 +169,10 @@ Under the hood, Docker is built on the following components:
   [namespaces](http://man7.org/linux/man-pages/man7/namespaces.7.html)
   capabilities of the Linux kernel
 * The [Go](https://golang.org) programming language
-* The [Docker Image Specification](https://github.com/docker/docker/blob/master/image/spec/v1.md)
+* The [Docker Image Specification](https://github.com/alcideio/moby/blob/master/image/spec/v1.md)
 * The [Libcontainer Specification](https://github.com/opencontainers/runc/blob/master/libcontainer/SPEC.md)
 
-Contributing to Docker [![GoDoc](https://godoc.org/github.com/docker/docker?status.svg)](https://godoc.org/github.com/docker/docker)
+Contributing to Docker [![GoDoc](https://godoc.org/github.com/alcideio/moby?status.svg)](https://godoc.org/github.com/alcideio/moby)
 ======================
 
 | **Master** (Linux) | **Experimental** (Linux) | **Windows** | **FreeBSD** |
@@ -200,7 +200,7 @@ How the project is run
 ======================
 
 Docker is a very, very active project. If you want to learn more about how it is run,
-or want to get more involved, the best place to start is [the project directory](https://github.com/docker/docker/tree/master/project).
+or want to get more involved, the best place to start is [the project directory](https://github.com/alcideio/moby/tree/master/project).
 
 We are always open to suggestions on process improvements, and are always looking for more maintainers.
 
@@ -262,7 +262,7 @@ We are always open to suggestions on process improvements, and are always lookin
 ### Legal
 
 *Brought to you courtesy of our legal counsel. For more context,
-please see the [NOTICE](https://github.com/docker/docker/blob/master/NOTICE) document in this repo.*
+please see the [NOTICE](https://github.com/alcideio/moby/blob/master/NOTICE) document in this repo.*
 
 Use and transfer of Docker may be subject to certain restrictions by the
 United States and other governments.
@@ -276,7 +276,7 @@ For more information, please see https://www.bis.doc.gov
 Licensing
 =========
 Docker is licensed under the Apache License, Version 2.0. See
-[LICENSE](https://github.com/docker/docker/blob/master/LICENSE) for the full
+[LICENSE](https://github.com/alcideio/moby/blob/master/LICENSE) for the full
 license text.
 
 Other Docker Related Projects

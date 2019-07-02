@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/sirupsen/logrus"
-	types "github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/daemon/cluster/executor/container"
+	types "github.com/alcideio/moby/api/types/swarm"
+	"github.com/alcideio/moby/daemon/cluster/executor/container"
 	swarmapi "github.com/docker/swarmkit/api"
 	swarmnode "github.com/docker/swarmkit/node"
 	"github.com/pkg/errors"

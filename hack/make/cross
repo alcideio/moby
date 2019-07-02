@@ -34,7 +34,7 @@ for platform in $DOCKER_CROSSPLATFORMS; do
 
 			# go install docker/docker/pkg packages to ensure that
 			# they build cross platform.
-			go install github.com/docker/docker/pkg/...
+			go install github.com/alcideio/moby/pkg/...
 
 			if [ -z "${daemonSupporting[$platform]}" ]; then
 				# we just need a simple client for these platforms

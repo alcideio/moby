@@ -4,10 +4,10 @@ import (
 	"testing"
 
 	"github.com/sirupsen/logrus"
-	cliflags "github.com/docker/docker/cli/flags"
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/pkg/testutil/assert"
-	"github.com/docker/docker/pkg/testutil/tempfile"
+	cliflags "github.com/alcideio/moby/cli/flags"
+	"github.com/alcideio/moby/daemon/config"
+	"github.com/alcideio/moby/pkg/testutil/assert"
+	"github.com/alcideio/moby/pkg/testutil/tempfile"
 	"github.com/spf13/pflag"
 )
 

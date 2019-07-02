@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/docker/docker/api/types"
-	volumetypes "github.com/docker/docker/api/types/volume"
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/request"
+	"github.com/alcideio/moby/api/types"
+	volumetypes "github.com/alcideio/moby/api/types/volume"
+	"github.com/alcideio/moby/integration-cli/checker"
+	"github.com/alcideio/moby/integration-cli/request"
 	"github.com/go-check/check"
 )
 

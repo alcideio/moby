@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestShellParser4EnvVars(t *testing.T) {

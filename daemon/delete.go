@@ -8,11 +8,11 @@ import (
 	"time"
 
 	"github.com/sirupsen/logrus"
-	apierrors "github.com/docker/docker/api/errors"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/layer"
-	volumestore "github.com/docker/docker/volume/store"
+	apierrors "github.com/alcideio/moby/api/errors"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/container"
+	"github.com/alcideio/moby/layer"
+	volumestore "github.com/alcideio/moby/volume/store"
 	"github.com/pkg/errors"
 )
 

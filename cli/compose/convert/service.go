@@ -7,14 +7,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/api/types/versions"
-	servicecli "github.com/docker/docker/cli/command/service"
-	composetypes "github.com/docker/docker/cli/compose/types"
-	"github.com/docker/docker/client"
-	"github.com/docker/docker/opts"
-	runconfigopts "github.com/docker/docker/runconfig/opts"
+	"github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/api/types/swarm"
+	"github.com/alcideio/moby/api/types/versions"
+	servicecli "github.com/alcideio/moby/cli/command/service"
+	composetypes "github.com/alcideio/moby/cli/compose/types"
+	"github.com/alcideio/moby/client"
+	"github.com/alcideio/moby/opts"
+	runconfigopts "github.com/alcideio/moby/runconfig/opts"
 	"github.com/pkg/errors"
 )
 

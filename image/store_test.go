@@ -3,8 +3,8 @@ package image
 import (
 	"testing"
 
-	"github.com/docker/docker/layer"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/layer"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 	"github.com/opencontainers/go-digest"
 )
 

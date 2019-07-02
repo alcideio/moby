@@ -8,9 +8,9 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/docker/docker/builder"
-	"github.com/docker/docker/pkg/pools"
-	"github.com/docker/docker/pkg/symlink"
+	"github.com/alcideio/moby/builder"
+	"github.com/alcideio/moby/pkg/pools"
+	"github.com/alcideio/moby/pkg/symlink"
 	"github.com/pkg/errors"
 )
 

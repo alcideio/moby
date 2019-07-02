@@ -3,8 +3,8 @@ package opts
 import (
 	"testing"
 
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/api/types/swarm"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestPortOptValidSimpleSyntax(t *testing.T) {

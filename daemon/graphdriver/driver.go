@@ -11,9 +11,9 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/vbatts/tar-split/tar/storage"
 
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/plugingetter"
+	"github.com/alcideio/moby/pkg/archive"
+	"github.com/alcideio/moby/pkg/idtools"
+	"github.com/alcideio/moby/pkg/plugingetter"
 )
 
 // FsMagic unsigned id of the filesystem in use.

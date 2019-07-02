@@ -7,7 +7,7 @@ import (
 	"golang.org/x/net/context"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/pkg/promise"
+	"github.com/alcideio/moby/pkg/promise"
 )
 
 var defaultEscapeSequence = []byte{16, 17} // ctrl-p, ctrl-q

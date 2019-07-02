@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/events"
-	executorpkg "github.com/docker/docker/daemon/cluster/executor"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/events"
+	executorpkg "github.com/alcideio/moby/daemon/cluster/executor"
 	"github.com/docker/go-connections/nat"
 	"github.com/docker/libnetwork"
 	"github.com/docker/swarmkit/agent/exec"

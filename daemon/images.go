@@ -9,11 +9,11 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/layer"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/filters"
+	"github.com/alcideio/moby/container"
+	"github.com/alcideio/moby/image"
+	"github.com/alcideio/moby/layer"
 )
 
 var acceptedImageFilterTags = map[string]bool{

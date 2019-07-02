@@ -5,7 +5,7 @@ keywords: "API, Usage, plugins, documentation, developer"
 ---
 
 <!-- This file is maintained within the docker/docker Github
-     repository at https://github.com/docker/docker/. Make all
+     repository at https://github.com/alcideio/moby/. Make all
      pull requests against that repo. If you see this file in
      another repository, consider it read-only there, as it will
      periodically be overwritten by the definitive file. Pull
@@ -18,7 +18,7 @@ keywords: "API, Usage, plugins, documentation, developer"
 
 This document outlines the format of the V0 plugin configuration. The plugin
 config described herein was introduced in the Docker daemon in the [v1.12.0
-release](https://github.com/docker/docker/commit/f37117045c5398fd3dca8016ea8ca0cb47e7312b).
+release](https://github.com/alcideio/moby/commit/f37117045c5398fd3dca8016ea8ca0cb47e7312b).
 
 Plugin configs describe the various constituents of a docker plugin. Plugin
 configs can be serialized to JSON format with the following media types:

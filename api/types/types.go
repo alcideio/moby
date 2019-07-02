@@ -8,12 +8,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/api/types/mount"
-	"github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/api/types/registry"
-	"github.com/docker/docker/api/types/swarm"
+	"github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/api/types/filters"
+	"github.com/alcideio/moby/api/types/mount"
+	"github.com/alcideio/moby/api/types/network"
+	"github.com/alcideio/moby/api/types/registry"
+	"github.com/alcideio/moby/api/types/swarm"
 	"github.com/docker/go-connections/nat"
 )
 

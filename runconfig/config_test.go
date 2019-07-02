@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api/types/container"
-	networktypes "github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/api/types/strslice"
+	"github.com/alcideio/moby/api/types/container"
+	networktypes "github.com/alcideio/moby/api/types/network"
+	"github.com/alcideio/moby/api/types/strslice"
 )
 
 type f struct {

@@ -1,8 +1,8 @@
 package types
 
 import (
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/network"
+	"github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/api/types/network"
 )
 
 // configs holds structs used for internal communication between the

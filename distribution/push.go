@@ -8,9 +8,9 @@ import (
 
 	"github.com/sirupsen/logrus"
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/distribution/metadata"
-	"github.com/docker/docker/pkg/progress"
-	"github.com/docker/docker/registry"
+	"github.com/alcideio/moby/distribution/metadata"
+	"github.com/alcideio/moby/pkg/progress"
+	"github.com/alcideio/moby/registry"
 	"golang.org/x/net/context"
 )
 

@@ -4,7 +4,7 @@ import (
 	"archive/tar"
 	"bytes"
 	"fmt"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 	"io"
 	"io/ioutil"
 	"os"
@@ -393,7 +393,7 @@ func TestUntarPathWithDestinationFile(t *testing.T) {
 
 // Do the same test as above but with the destination folder already exists
 // and the destination file is a directory
-// It's working, see https://github.com/docker/docker/issues/10040
+// It's working, see https://github.com/alcideio/moby/issues/10040
 func TestUntarPathWithDestinationSrcFileAsFolder(t *testing.T) {
 	tmpFolder, err := ioutil.TempDir("", "docker-archive-test")
 	if err != nil {

@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/swarm"
-	composetypes "github.com/docker/docker/cli/compose/types"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/api/types/swarm"
+	composetypes "github.com/alcideio/moby/cli/compose/types"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestConvertRestartPolicyFromNone(t *testing.T) {

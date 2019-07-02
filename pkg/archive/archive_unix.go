@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"syscall"
 
-	"github.com/docker/docker/pkg/system"
+	"github.com/alcideio/moby/pkg/system"
 	rsystem "github.com/opencontainers/runc/libcontainer/system"
 )
 

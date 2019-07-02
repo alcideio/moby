@@ -10,8 +10,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 	containerd "github.com/docker/containerd/api/grpc/types"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/mount"
+	"github.com/alcideio/moby/pkg/ioutils"
+	"github.com/alcideio/moby/pkg/mount"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/golang/protobuf/ptypes/timestamp"
 	specs "github.com/opencontainers/runtime-spec/specs-go"

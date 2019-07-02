@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/pkg/stringid"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func TestContainerStatsContext(t *testing.T) {

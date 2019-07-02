@@ -7,7 +7,7 @@ If your experience deviates from this document, please document the changes
 to keep it up-to-date.
 
 It is important to note that this document assumes that the git remote in your
-repository that corresponds to "https://github.com/docker/docker" is named
+repository that corresponds to "https://github.com/alcideio/moby" is named
 "origin".  If yours is not (for example, if you've chosen to name it "upstream"
 or something similar instead), be sure to adjust the listed snippets for your
 local environment accordingly.  If you are not sure what your upstream remote is
@@ -18,7 +18,7 @@ like:
 
 ```bash
 export GITHUBUSER="YOUR_GITHUB_USER"
-git remote add origin https://github.com/docker/docker.git
+git remote add origin https://github.com/alcideio/moby.git
 git remote add $GITHUBUSER git@github.com:$GITHUBUSER/docker.git
 ```
 
@@ -229,7 +229,7 @@ docker build -t docker .
 docker run \
     --rm -t --privileged \
     -e DOCKER_GRAPHDRIVER=aufs \
-    -v $(pwd)/bundles:/go/src/github.com/docker/docker/bundles \
+    -v $(pwd)/bundles:/go/src/github.com/alcideio/moby/bundles \
     docker \
     hack/make.sh binary build-deb build-rpm
 ```
@@ -249,7 +249,7 @@ save it. (for the `GPG_PASSPHRASE`).
 docker build -t docker .
 docker run --rm -it --privileged \
     -v /volumes/repos:/volumes/repos \
-    -v $(pwd)/bundles:/go/src/github.com/docker/docker/bundles \
+    -v $(pwd)/bundles:/go/src/github.com/alcideio/moby/bundles \
     -v $HOME/.gnupg:/root/.gnupg \
     -e DOCKER_RELEASE_DIR=/volumes/repos \
     -e GPG_PASSPHRASE \
@@ -395,7 +395,7 @@ You will then repeat step 6 to publish the binaries to test
 docker build -t docker .
 docker run \
     --rm -t --privileged \
-    -v $(pwd)/bundles:/go/src/github.com/docker/docker/bundles \
+    -v $(pwd)/bundles:/go/src/github.com/alcideio/moby/bundles \
     docker \
     hack/make.sh binary build-deb build-rpm
 ```
@@ -415,7 +415,7 @@ save it. (for the `GPG_PASSPHRASE`).
 docker build -t docker .
 docker run --rm -it --privileged \
     -v /volumes/repos:/volumes/repos \
-    -v $(pwd)/bundles:/go/src/github.com/docker/docker/bundles \
+    -v $(pwd)/bundles:/go/src/github.com/alcideio/moby/bundles \
     -v $HOME/.gnupg:/root/.gnupg \
     -e DOCKER_RELEASE_DIR=/volumes/repos \
     -e GPG_PASSPHRASE \
@@ -461,14 +461,14 @@ git tag -a $VERSION -m $VERSION bump_$VERSION
 git push origin $VERSION
 ```
 
-Once the tag is pushed, go to GitHub and create a [new release](https://github.com/docker/docker/releases/new).
+Once the tag is pushed, go to GitHub and create a [new release](https://github.com/alcideio/moby/releases/new).
 If the tag is for an RC make sure you check `This is a pre-release` at the bottom of the form.
 
 Select the tag that you just pushed as the version and paste the changelog in the description of the release.
 You can see examples in this two links:
 
-https://github.com/docker/docker/releases/tag/v1.8.0
-https://github.com/docker/docker/releases/tag/v1.8.0-rc3
+https://github.com/alcideio/moby/releases/tag/v1.8.0
+https://github.com/alcideio/moby/releases/tag/v1.8.0-rc3
 
 ### 22. Go to github to merge the `bump_$VERSION` branch into release
 

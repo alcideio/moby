@@ -8,11 +8,11 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/docker/docker/api"
-	"github.com/docker/docker/dockerversion"
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/pkg/homedir"
-	icmd "github.com/docker/docker/pkg/testutil/cmd"
+	"github.com/alcideio/moby/api"
+	"github.com/alcideio/moby/dockerversion"
+	"github.com/alcideio/moby/integration-cli/checker"
+	"github.com/alcideio/moby/pkg/homedir"
+	icmd "github.com/alcideio/moby/pkg/testutil/cmd"
 	"github.com/go-check/check"
 )
 

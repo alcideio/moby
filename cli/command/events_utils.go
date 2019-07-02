@@ -4,7 +4,7 @@ import (
 	"sync"
 
 	"github.com/sirupsen/logrus"
-	eventtypes "github.com/docker/docker/api/types/events"
+	eventtypes "github.com/alcideio/moby/api/types/events"
 )
 
 type eventProcessor func(eventtypes.Message, error) error

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/docker/docker/pkg/plugingetter"
+	"github.com/alcideio/moby/pkg/plugingetter"
 	"github.com/docker/libnetwork/driverapi"
 	"github.com/docker/libnetwork/ipamapi"
 	"github.com/docker/libnetwork/types"

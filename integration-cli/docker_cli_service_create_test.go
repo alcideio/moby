@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/mount"
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/integration-cli/checker"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/mount"
+	"github.com/alcideio/moby/api/types/swarm"
+	"github.com/alcideio/moby/integration-cli/checker"
 	"github.com/go-check/check"
 )
 

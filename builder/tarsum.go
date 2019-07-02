@@ -6,11 +6,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/chrootarchive"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/symlink"
-	"github.com/docker/docker/pkg/tarsum"
+	"github.com/alcideio/moby/pkg/archive"
+	"github.com/alcideio/moby/pkg/chrootarchive"
+	"github.com/alcideio/moby/pkg/ioutils"
+	"github.com/alcideio/moby/pkg/symlink"
+	"github.com/alcideio/moby/pkg/tarsum"
 )
 
 type tarSumContext struct {

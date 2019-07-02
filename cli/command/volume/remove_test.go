@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/docker/docker/cli/internal/test"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/cli/internal/test"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 	"github.com/pkg/errors"
 )
 

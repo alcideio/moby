@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/docker/docker/cli/compose/convert"
-	"github.com/docker/docker/cli/internal/test"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/cli/compose/convert"
+	"github.com/alcideio/moby/cli/internal/test"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 	"golang.org/x/net/context"
 )
 

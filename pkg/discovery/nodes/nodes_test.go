@@ -3,7 +3,7 @@ package nodes
 import (
 	"testing"
 
-	"github.com/docker/docker/pkg/discovery"
+	"github.com/alcideio/moby/pkg/discovery"
 
 	"github.com/go-check/check"
 )

@@ -6,10 +6,10 @@ import (
 	"strings"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/layer"
-	"github.com/docker/docker/pkg/stringid"
+	"github.com/alcideio/moby/api/types/versions"
+	"github.com/alcideio/moby/image"
+	"github.com/alcideio/moby/layer"
+	"github.com/alcideio/moby/pkg/stringid"
 	"github.com/opencontainers/go-digest"
 )
 

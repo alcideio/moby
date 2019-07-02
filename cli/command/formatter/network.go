@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/pkg/stringid"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/pkg/stringid"
 )
 
 const (

@@ -5,8 +5,8 @@ package daemon
 import (
 	"time"
 
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/libcontainerd"
+	"github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/libcontainerd"
 )
 
 func toContainerdResources(resources container.Resources) libcontainerd.Resources {

@@ -6,9 +6,9 @@ import (
 	"strings"
 
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/cli"
-	"github.com/docker/docker/cli/command"
-	"github.com/docker/docker/pkg/jsonmessage"
+	"github.com/alcideio/moby/cli"
+	"github.com/alcideio/moby/cli/command"
+	"github.com/alcideio/moby/pkg/jsonmessage"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 )

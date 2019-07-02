@@ -3,7 +3,7 @@ package build
 import (
 	"strings"
 
-	icmd "github.com/docker/docker/pkg/testutil/cmd"
+	icmd "github.com/alcideio/moby/pkg/testutil/cmd"
 )
 
 // WithDockerfile creates / returns a CmdOperator to set the Dockerfile for a build operation

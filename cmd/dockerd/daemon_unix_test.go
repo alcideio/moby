@@ -8,9 +8,9 @@ package main
 import (
 	"testing"
 
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/pkg/testutil/assert"
-	"github.com/docker/docker/pkg/testutil/tempfile"
+	"github.com/alcideio/moby/daemon/config"
+	"github.com/alcideio/moby/pkg/testutil/assert"
+	"github.com/alcideio/moby/pkg/testutil/tempfile"
 )
 
 func TestLoadDaemonCliConfigWithDaemonFlags(t *testing.T) {

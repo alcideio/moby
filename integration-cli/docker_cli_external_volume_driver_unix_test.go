@@ -15,11 +15,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/daemon"
-	"github.com/docker/docker/pkg/stringid"
-	"github.com/docker/docker/volume"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/integration-cli/checker"
+	"github.com/alcideio/moby/integration-cli/daemon"
+	"github.com/alcideio/moby/pkg/stringid"
+	"github.com/alcideio/moby/volume"
 	"github.com/go-check/check"
 )
 

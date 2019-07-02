@@ -6,10 +6,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/api/types"
+	containertypes "github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/container"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func newDaemonWithTmpRoot(t *testing.T) (*Daemon, func()) {

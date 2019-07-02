@@ -5,8 +5,8 @@ import (
 	"io"
 	"net"
 
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/filters"
+	"github.com/alcideio/moby/api/types/container"
+	"github.com/alcideio/moby/api/types/filters"
 	"github.com/docker/go-units"
 )
 

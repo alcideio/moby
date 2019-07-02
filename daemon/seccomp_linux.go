@@ -6,8 +6,8 @@ import (
 	"fmt"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/profiles/seccomp"
+	"github.com/alcideio/moby/container"
+	"github.com/alcideio/moby/profiles/seccomp"
 	"github.com/opencontainers/runtime-spec/specs-go"
 )
 

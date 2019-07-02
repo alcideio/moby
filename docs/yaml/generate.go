@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/docker/docker/cli/command"
-	"github.com/docker/docker/cli/command/commands"
-	"github.com/docker/docker/pkg/term"
+	"github.com/alcideio/moby/cli/command"
+	"github.com/alcideio/moby/cli/command/commands"
+	"github.com/alcideio/moby/pkg/term"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 )

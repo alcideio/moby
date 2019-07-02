@@ -3,8 +3,8 @@ package build
 import (
 	"io"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/backend"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/backend"
 	"golang.org/x/net/context"
 )
 

@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/cli/command/formatter"
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/swarm"
+	"github.com/alcideio/moby/cli/command/formatter"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 )
 
 func formatServiceInspect(t *testing.T, format formatter.Format, now time.Time) string {

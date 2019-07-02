@@ -5,9 +5,9 @@ import (
 	"fmt"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/daemon/discovery"
-	"github.com/docker/docker/libcontainerd"
+	"github.com/alcideio/moby/daemon/config"
+	"github.com/alcideio/moby/daemon/discovery"
+	"github.com/alcideio/moby/libcontainerd"
 )
 
 // Reload reads configuration changes and modifies the

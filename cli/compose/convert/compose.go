@@ -4,10 +4,10 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/docker/docker/api/types"
-	networktypes "github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/api/types/swarm"
-	composetypes "github.com/docker/docker/cli/compose/types"
+	"github.com/alcideio/moby/api/types"
+	networktypes "github.com/alcideio/moby/api/types/network"
+	"github.com/alcideio/moby/api/types/swarm"
+	composetypes "github.com/alcideio/moby/cli/compose/types"
 )
 
 const (

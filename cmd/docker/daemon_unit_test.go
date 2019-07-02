@@ -5,7 +5,7 @@ package main
 import (
 	"testing"
 
-	"github.com/docker/docker/pkg/testutil/assert"
+	"github.com/alcideio/moby/pkg/testutil/assert"
 	"github.com/spf13/cobra"
 )
 

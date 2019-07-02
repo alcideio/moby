@@ -22,8 +22,8 @@ For example, to list running containers (the equivalent of "docker ps"):
 		"context"
 		"fmt"
 
-		"github.com/docker/docker/api/types"
-		"github.com/docker/docker/client"
+		"github.com/alcideio/moby/api/types"
+		"github.com/alcideio/moby/client"
 	)
 
 	func main() {
@@ -53,7 +53,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/docker/docker/api"
+	"github.com/alcideio/moby/api"
 	"github.com/docker/go-connections/sockets"
 	"github.com/docker/go-connections/tlsconfig"
 )

@@ -13,9 +13,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/reexec"
-	"github.com/docker/docker/pkg/system"
+	"github.com/alcideio/moby/pkg/archive"
+	"github.com/alcideio/moby/pkg/reexec"
+	"github.com/alcideio/moby/pkg/system"
 )
 
 func init() {

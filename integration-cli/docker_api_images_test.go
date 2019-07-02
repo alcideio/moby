@@ -6,12 +6,12 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/image"
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/cli"
-	"github.com/docker/docker/integration-cli/cli/build"
-	"github.com/docker/docker/integration-cli/request"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/image"
+	"github.com/alcideio/moby/integration-cli/checker"
+	"github.com/alcideio/moby/integration-cli/cli"
+	"github.com/alcideio/moby/integration-cli/cli/build"
+	"github.com/alcideio/moby/integration-cli/request"
 	"github.com/go-check/check"
 )
 

@@ -6,7 +6,7 @@
 # docker build -t docker -f Dockerfile.s390x .
 #
 # # Mount your source in an interactive container for quick testing:
-# docker run -v `pwd`:/go/src/github.com/docker/docker --privileged -i -t docker bash
+# docker run -v `pwd`:/go/src/github.com/alcideio/moby --privileged -i -t docker bash
 #
 # # Run the test suite:
 # docker run --privileged docker hack/make.sh test-unit test-integration-cli test-docker-py
@@ -137,7 +137,7 @@ RUN set -x \
 
 # Get the "docker-py" source so we can run their integration tests
 ENV DOCKER_PY_COMMIT e2655f658408f9ad1f62abdef3eb6ed43c0cf324
-RUN git clone https://github.com/docker/docker-py.git /docker-py \
+RUN git clone https://github.com/alcideio/moby-py.git /docker-py \
 	&& cd /docker-py \
 	&& git checkout -q $DOCKER_PY_COMMIT \
 	&& pip install -r test-requirements.txt
@@ -150,7 +150,7 @@ RUN groupadd -r docker
 RUN useradd --create-home --gid docker unprivilegeduser
 
 VOLUME /var/lib/docker
-WORKDIR /go/src/github.com/docker/docker
+WORKDIR /go/src/github.com/alcideio/moby
 ENV DOCKER_BUILDTAGS apparmor selinux seccomp
 
 # Let us use a .bashrc file
@@ -160,7 +160,7 @@ RUN ln -sfv $PWD/.bashrc ~/.bashrc
 RUN ln -sv $PWD/contrib/completion/bash/docker /etc/bash_completion.d/docker
 
 # Get useful and necessary Hub images so we can "docker load" locally instead of pulling
-COPY contrib/download-frozen-image-v2.sh /go/src/github.com/docker/docker/contrib/
+COPY contrib/download-frozen-image-v2.sh /go/src/github.com/alcideio/moby/contrib/
 RUN ./contrib/download-frozen-image-v2.sh /docker-frozen-images \
 	s390x/buildpack-deps:jessie@sha256:4d1381224acaca6c4bfe3604de3af6972083a8558a99672cb6989c7541780099 \
 	s390x/busybox:latest@sha256:dd61522c983884a66ed72d60301925889028c6d2d5e0220a8fe1d9b4c6a4f01b \
@@ -178,4 +178,4 @@ RUN /tmp/install-binaries.sh tomlv vndr runc containerd tini proxy
 ENTRYPOINT ["hack/dind"]
 
 # Upload docker source
-COPY . /go/src/github.com/docker/docker
+COPY . /go/src/github.com/alcideio/moby

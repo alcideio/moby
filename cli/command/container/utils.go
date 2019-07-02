@@ -4,12 +4,12 @@ import (
 	"strconv"
 
 	"github.com/sirupsen/logrus"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/events"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/api/types/versions"
-	"github.com/docker/docker/cli/command"
-	clientapi "github.com/docker/docker/client"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/api/types/events"
+	"github.com/alcideio/moby/api/types/filters"
+	"github.com/alcideio/moby/api/types/versions"
+	"github.com/alcideio/moby/cli/command"
+	clientapi "github.com/alcideio/moby/client"
 	"golang.org/x/net/context"
 )
 

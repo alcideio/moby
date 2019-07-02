@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/docker/docker/api/types/filters"
-	runconfigopts "github.com/docker/docker/runconfig/opts"
+	"github.com/alcideio/moby/api/types/filters"
+	runconfigopts "github.com/alcideio/moby/runconfig/opts"
 	swarmapi "github.com/docker/swarmkit/api"
 )
 

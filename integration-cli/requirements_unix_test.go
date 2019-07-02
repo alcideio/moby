@@ -8,8 +8,8 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/docker/docker/pkg/parsers/kernel"
-	"github.com/docker/docker/pkg/sysinfo"
+	"github.com/alcideio/moby/pkg/parsers/kernel"
+	"github.com/alcideio/moby/pkg/sysinfo"
 )
 
 var (

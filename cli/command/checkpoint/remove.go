@@ -3,9 +3,9 @@ package checkpoint
 import (
 	"golang.org/x/net/context"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/cli"
-	"github.com/docker/docker/cli/command"
+	"github.com/alcideio/moby/api/types"
+	"github.com/alcideio/moby/cli"
+	"github.com/alcideio/moby/cli/command"
 	"github.com/spf13/cobra"
 )
 
